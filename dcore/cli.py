@@ -2,8 +2,8 @@
 
   check    run the deterministic checks and list every issue
   analyse  print where each part stands (no files written)
-  freeze   write artifact.v1.json, report.md, graph.md and SHA256SUMS
-  viz      redraw graph.md from the frozen artifact
+  freeze   write artifact.v1.json, report.md, graph.md, graph.html and SHA256SUMS
+  viz      redraw graph.md and graph.html from the frozen artifact
   verify   rebuild from claims.json and confirm the hashes match
   curate   record a person's decision on an argument (accept or reject, with a note)
 """
@@ -18,9 +18,9 @@ from pathlib import Path
 
 from dcore.analyse import analyse
 from dcore.checks import blocking, run_checks
-from dcore.freeze import (ARTIFACT_NAME, GRAPH_NAME, SUMS_NAME, build_artifact, freeze, load,
-                          render_json)
-from dcore.viz import render_graph
+from dcore.freeze import (ARTIFACT_NAME, GRAPH_NAME, PAGE_NAME, SUMS_NAME, build_artifact, freeze,
+                          load, render_json)
+from dcore.viz import render_graph, render_html
 
 
 def _check(folder: Path) -> int:
@@ -55,8 +55,10 @@ def _freeze(folder: Path) -> int:
 def _viz(folder: Path) -> int:
     payload = (folder / ARTIFACT_NAME).read_bytes()
     digest = hashlib.sha256(payload).hexdigest()
-    (folder / GRAPH_NAME).write_text(render_graph(json.loads(payload), digest), encoding="utf-8")
-    print(f"wrote {folder / GRAPH_NAME}")
+    artifact = json.loads(payload)
+    (folder / GRAPH_NAME).write_bytes(render_graph(artifact, digest).encode("utf-8"))
+    (folder / PAGE_NAME).write_bytes(render_html(artifact, digest).encode("utf-8"))
+    print(f"wrote {folder / GRAPH_NAME} and {folder / PAGE_NAME}")
     return 0
 
 

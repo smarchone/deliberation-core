@@ -9,7 +9,7 @@ You do the judgment work; `dcore` does the strict work. Never hand-write a
 signal, a verdict or a hash: the scripts compute those from the file you write.
 
 The output is a folder `claims/<id>/` holding `claims.json` (yours),
-and `artifact.v1.json`, `report.md`, `graph.md`, `SHA256SUMS` (built by `dcore`).
+and `artifact.v1.json`, `report.md`, `graph.md`, `graph.html`, `SHA256SUMS` (built by `dcore`).
 
 ## Principles (non-negotiable)
 
@@ -74,8 +74,9 @@ and `artifact.v1.json`, `report.md`, `graph.md`, `SHA256SUMS` (built by `dcore`)
 
 7. **Freeze.** `python -m dcore analyse <folder>` to preview, then
    `python -m dcore freeze <folder>` and `python -m dcore verify <folder>`.
-   Freeze also writes `graph.md`, a Mermaid diagram of each part's graph;
-   `python -m dcore viz <folder>` redraws it from the frozen artifact.
+   Freeze also writes `graph.md` (a Mermaid diagram of each part's graph) and
+   `graph.html` (the whole graph on one zoomable page); `python -m dcore viz <folder>`
+   redraws both from the frozen artifact.
    If anything later changes, bump `version`, set `based_on` to the previous
    artifact's sha256, and freeze again.
 

@@ -1,4 +1,5 @@
-"""Viz: draw each part's argument graph as a Mermaid diagram.
+"""Viz: draw each part's argument graph, as Mermaid (graph.md) and as an
+interactive page (graph.html).
 
 Rendered from the frozen artifact, like the report, so the picture can never
 disagree with the results. Mermaid renders on GitHub and in most markdown
@@ -15,7 +16,11 @@ previews, so `graph.md` needs no tooling to view.
 
 from __future__ import annotations
 
-from dcore.report import KIND_WORDS, _argument_state
+import html
+import json
+
+from dcore.page import PAGE
+from dcore.report import KIND_WORDS, _argument_state, _hinge_line, _link_lines
 
 CLASSES = {
     "stands": "stands",
@@ -79,3 +84,52 @@ def render_graph(artifact: dict, digest: str) -> str:
                   f"*{KIND_WORDS[claim['kind']].capitalize()} · {parts[claim['id']]['signal']}*", "",
                   *_part_diagram(d, claim, parts[claim["id"]])]
     return "\n".join(lines) + "\n"
+
+
+LINK_LABELS = {"holds": "rests on", "open": "open, so this stays open", "fails": "does not hold"}
+
+
+def _page_part(d: dict, claim: dict, part: dict, sources: dict, arguments: dict) -> dict:
+    own = [a for a in d["arguments"] if a["sub_claim"] == claim["id"]]
+    ids = {a["id"] for a in own}
+    nodes = [{
+        "id": a["id"], "title": a["title"], "stance": a["stance"], "role": a.get("role", "case"),
+        "state": _argument_state(a, part), "reasoning": a["reasoning"], "check_note": a.get("check_note"),
+        "evidence": [{"text": e["text"], "from_part": e.get("from_part"),
+                      "sources": [{k: sources[i][k] for k in ("publisher", "date", "url", "title")}
+                                  for i in e["sources"] if i in sources]}
+                     for e in a["evidence"]],
+    } for a in own]
+    edges = [{"from": a["id"], "to": claim["id"], "kind": "case", "stance": a["stance"]}
+             for a in own if a.get("role") != "objection"]
+    edges += [{"from": x["source"], "to": x["target"], "kind": "attack", "type": x["type"], "note": x["note"]}
+              for x in d["attacks"] if x["source"] in ids]
+    edges += [{"from": f"link:{link['part']}", "to": link["argument"], "kind": "link",
+               "label": LINK_LABELS[link["effect"]]} for link in part.get("links", [])]
+    preferences = [p for p in d["preferences"] if p["preferred"] in ids]
+    judgment = [f"This depends on a judgment call: \"{arguments[p['preferred']]['title']}\" was judged "
+                f"stronger than \"{arguments[p['over']]['title']}\"."
+                for p in preferences if p["id"] in part["depends_on_judgment"]]
+    return {
+        "id": claim["id"], "text": claim["text"], "kind": KIND_WORDS[claim["kind"]],
+        "signal": part["signal"], "plain": part["plain"], "settle_by": claim["settle_by"],
+        "links": part.get("links", []), "nodes": nodes, "edges": edges,
+        "preferences": [{k: p[k] for k in ("preferred", "over", "rationale")} for p in preferences],
+        "hinge_lines": [_hinge_line(hg, arguments) for hg in part["hinges"]],
+        "link_lines": _link_lines(part, arguments), "judgment_lines": judgment,
+    }
+
+
+def render_html(artifact: dict, digest: str) -> str:
+    """A self-contained page: the parts on one map, then each part's two sides in plain words."""
+    d = artifact["deliberation"]
+    parts = artifact["analysis"]["parts"]
+    sources = {s["id"]: s for s in d["sources"]}
+    arguments = {a["id"]: a for a in d["arguments"]}
+    data = {
+        "question": d["question"], "as_of": d["as_of"], "version": d["version"], "digest": digest,
+        "parts": [_page_part(d, c, parts[c["id"]], sources, arguments) for c in d["sub_claims"]],
+        "actions": [{k: a[k] for k in ("text", "who", "settles", "why_both_sides")} for a in d["actions"]],
+    }
+    payload = json.dumps(data, sort_keys=True, ensure_ascii=False).replace("</", "<\\/")
+    return PAGE.replace("__TITLE__", html.escape(d["question"]["plain"])).replace("__DATA__", payload)
