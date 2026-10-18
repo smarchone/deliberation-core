@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deliberation-core"
+version = "0.1.0"
+description = "The deterministic half of the deliberation core: check a deliberation, compute what stands with a verified argumentation engine, and freeze a hash-stamped artifact and report."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.6",
+    # The argument engine, pinned: an engine change could change frozen artifacts.
+    "argkit @ git+https://github.com/tarionai/defeasible-argumentation@5e0194b00533fa2f2fbe9be74228dc80c83be6f6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = ["dcore"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
