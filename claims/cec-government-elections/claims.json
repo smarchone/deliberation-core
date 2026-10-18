@@ -1,7 +1,7 @@
 {
   "id": "cec-government-elections",
-  "version": 1,
-  "based_on": null,
+  "version": 2,
+  "based_on": "2a09e23b664b90612ffed4fa04a189a788193e3aa22e5ed5692176c14c6e8198",
   "as_of": "2026-10-18",
   "question": {
     "original": "CEC and modi government, together are trying to rig Indian democracy",
@@ -761,10 +761,15 @@
           "sources": [
             "S12"
           ]
+        },
+        {
+          "id": "K12.P1.e3",
+          "text": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners.",
+          "from_part": "K1"
         }
       ],
       "status": "cross_checked",
-      "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording)."
+      "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording). In version 2, linked to part K1's result for the selection-panel point; no new source."
     },
     {
       "id": "K12.C1",

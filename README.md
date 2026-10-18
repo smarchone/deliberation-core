@@ -69,5 +69,7 @@ previous hash, and freeze again.
 
 ## Limits
 
-- Parts aren't linked to each other yet; attacks stay within one part.
+- Parts link only through evidence: an argument can rest on another part's
+  result (`from_part`), and falls or stays open with it. Attacks still stay
+  within one part, and links can't loop.
 - Cross-checking is a second model pass, not a person, and the report says so.

@@ -49,6 +49,10 @@ and `artifact.v1.json`, `report.md`, `graph.md`, `SHA256SUMS` (built by `dcore`)
      Undercuts always succeed, so use them only when the step really fails.
    Use `role: "objection"` for an argument that only attacks another one
    (it shapes the outcome but is not itself a case for or against).
+   When an argument builds on another part (K12 using K1's result), add
+   evidence with `from_part: "K1"` and no sources instead of repeating K1's
+   evidence; the engine resolves K1 first, and the argument falls if K1 does
+   not hold, or stays open while K1 is contested. Links cannot loop.
    Add a `preference` only when one side is clearly stronger, and say why in
    `rationale`; the report flags every outcome that depends on one.
 

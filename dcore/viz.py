@@ -10,6 +10,7 @@ previews, so `graph.md` needs no tooling to view.
   amber         an argument that is still open
   solid arrow   a case for the part; dotted arrow: a case against it
   thick arrow   an attack, labelled rebuts / undermines / undercuts
+  rests on      a link to another part's result, with where that part stands
 """
 
 from __future__ import annotations
@@ -23,6 +24,8 @@ CLASSES = {
     "open": "open",
     "not yet checked": "unchecked",
 }
+LINK_ARROWS = {"holds": "-.->|rests on|", "open": "==>|is open, so leaves open|",
+               "fails": "==>|does not hold, so undermines|"}
 VERBS = {"rebut": "rebuts", "undermine": "undermines", "undercut": "undercuts"}
 STYLE = [
     "  classDef part fill:#eef2ff,stroke:#4f46e5,color:#1e1b4b",
@@ -54,6 +57,11 @@ def _part_diagram(d: dict, claim: dict, part: dict) -> list[str]:
             continue
         arrow = "-->|for|" if a["stance"] == "supports" else "-.->|against|"
         lines.append(f"  {_id(a['id'])} {arrow} {_id(claim['id'])}")
+    for link in part.get("links", []):
+        node = f"link_{_id(link['part'])}"
+        lines.append(f'  {node}(["{link["part"]}: {link["part_signal"]}"]):::part')
+        arrow = LINK_ARROWS[link["effect"]]
+        lines.append(f"  {node} {arrow} {_id(link['argument'])}")
     for x in d["attacks"]:
         if x["source"] in ids:
             lines.append(f"  {_id(x['source'])} ==>|{VERBS[x['type']]}| {_id(x['target'])}")

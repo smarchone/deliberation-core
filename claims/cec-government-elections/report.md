@@ -1,6 +1,6 @@
 # Are the Chief Election Commissioner and the Union government working together to make India's elections unfair?
 
-As of 2026-10-18 · version 1 · artifact `2a09e23b664b`
+As of 2026-10-18 · version 2 · artifact `bf4bff4f5367`
 
 > Heard as: "CEC and modi government, together are trying to rig Indian democracy"
 > "Rig" is replaced with "make elections unfair" so the question reads the same to both sides. The claim is then split into parts that can each be checked: how the referee is appointed, what happened to voter rolls, voting machines, rule enforcement, transparency, how the Commission works inside, and finally intent.
@@ -287,6 +287,7 @@ Also heard as: "CEC and modi government, together are trying to rig Indian democ
 - **The pieces point one way** (falls). The government side holds the majority in picking commissioners, the Commission's contested decisions are the subject of formal removal notices that were declined, and a study found close-seat anomalies favouring the ruling party; critics read these together as a shared aim, though none of them shows coordination directly.
   - Removal notices against the CEC signed by 130 Lok Sabha and 63 Rajya Sabha MPs were declined in April 2026; the bulletins gave no specific reasons, though the Rajya Sabha Chairman was reported to have found no prima facie case of misbehaviour. ([Scroll, 2026-04-07](https://scroll.in/latest/1091926/opposition-notice-to-remove-chief-election-commissioner-rejected-by-rajya-sabha-chairman-ls-speaker))
   - A 2023 paper by Sabyasachi Das, not peer reviewed at the time, found the BJP won a disproportionate share of close 2019 contests, concentrated in BJP-ruled states. ([Scroll, 2023-08-14](https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec))
+  - Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners. (rests on K1, which is supported)
 - **Losing some races does not rule out tilting close ones** (stands, an objection). Unfairness at the margins would show up in close seats, not in landslides, so big opposition wins do not show the process is fair.
   - The Das paper's anomaly was specific to closely fought seats. ([Scroll, 2023-08-14](https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec))
 
@@ -310,7 +311,7 @@ Also heard as: "CEC and modi government, together are trying to rig Indian democ
 - Arguments: 22 in total; 22 machine cross-checked, 0 accepted by a person, 0 rejected, 0 still unchecked.
 - Counted as live in this analysis: cross_checked, curated_accepted.
 - **No person has reviewed this yet.** Treat it as a first draft for both sides to correct.
-- Open warnings: single publisher (27).
+- Open warnings: missing citation (1), single publisher (27).
 - Engine: grounded semantics, argkit 5e0194b00533.
 
-Verify: `sha256sum -c SHA256SUMS` in this folder; artifact sha256 `2a09e23b664b90612ffed4fa04a189a788193e3aa22e5ed5692176c14c6e8198`.
+Verify: `sha256sum -c SHA256SUMS` in this folder; artifact sha256 `bf4bff4f53677fa79cfeb282c6a439650b75e890712fb6a1dbbab2332733fbed`.

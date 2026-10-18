@@ -121,3 +121,36 @@ def test_frozen_example_matches_its_source():
     recorded = (EXAMPLE / SUMS_NAME).read_text(encoding="utf-8").split()[0]
     assert hashlib.sha256(payload).hexdigest() == recorded
     assert render_json(build_artifact(load(EXAMPLE / "claims.json"))).encode("utf-8") == payload
+
+
+def _linked(k1_arguments: list[dict], attacks: list[dict] | None = None) -> dict:
+    """K2's only case rests on K1's result."""
+    resting = _argument("R", "supports", sub_claim="K2")
+    resting["evidence"] = [{"id": "R.e1", "text": "K1 holds", "from_part": "K1"}]
+    data = _base(arguments=[*k1_arguments, resting], attacks=attacks or [])
+    data["sub_claims"].append({"id": "K2", "kind": "interpretation", "text": "another claim",
+                               "settle_by": "a test"})
+    return data
+
+
+def test_a_part_resting_on_another_follows_it():
+    def k2(data: dict) -> dict:
+        return analyse(Deliberation.model_validate(data))["parts"]["K2"]
+
+    assert k2(_linked([_argument("P", "supports")]))["signal"] == "supported"
+    mutual = [{"id": "X1", "source": "C", "target": "P", "type": "rebut", "note": ""},
+              {"id": "X2", "source": "P", "target": "C", "type": "rebut", "note": ""}]
+    open_part = k2(_linked([_argument("P", "supports"), _argument("C", "challenges")], mutual))
+    assert open_part["signal"] == "contested"
+    assert open_part["links"][0]["effect"] == "open" and open_part["hinges"] == []
+    assert k2(_linked([_argument("C", "challenges")]))["signal"] == "unproven either way"
+
+
+def test_links_are_checked():
+    data = _linked([_argument("P", "supports")])
+    data["arguments"][0]["evidence"] = [{"id": "P.e1", "text": "K2 holds", "from_part": "K2"}]
+    kinds = {i.kind for i in blocking(run_checks(Deliberation.model_validate(data)))}
+    assert "link_cycle" in kinds
+    data["arguments"][0]["evidence"][0]["from_part"] = "K9"
+    kinds = {i.kind for i in blocking(run_checks(Deliberation.model_validate(data)))}
+    assert kinds == {"unknown_part"}

@@ -1,5 +1,10 @@
 """Compile a deliberation into argkit graphs: one graph per sub-claim.
 
+Parts are linked through evidence: evidence with `from_part` is another part's
+result. argkit has no chaining, so a link is resolved in order instead: the
+part it rests on is resolved first, and if that part does not hold, a link
+node attacks every argument that rests on it (see `to_framework`).
+
 Each sub-claim becomes the root of its own `ArgumentGraph`. An argument that
 supports it concludes the sub-claim's node; an argument that challenges it
 concludes a `<id>.not` node ("it is not the case that ..."). Evidence becomes
@@ -130,15 +135,59 @@ def compile_all(deliberation: Deliberation) -> dict[str, ArgumentGraph]:
     return {c.id: compile_sub_claim(deliberation, c.id) for c in deliberation.sub_claims}
 
 
+def part_order(deliberation: Deliberation) -> list[str]:
+    """Sub-claim ids, each after the parts its arguments rest on. Raises
+    ValueError naming a part caught in a loop."""
+    known = {c.id for c in deliberation.sub_claims}
+    needs = {c.id: sorted({e.from_part for a in deliberation.arguments_for(c.id) for e in a.evidence
+                           if e.from_part in known and e.from_part != c.id})
+             for c in deliberation.sub_claims}
+    order, state = [], {}
+
+    def visit(part: str) -> None:
+        if state.get(part) == "done":
+            return
+        if state.get(part) == "visiting":
+            raise ValueError(part)
+        state[part] = "visiting"
+        for needed in needs[part]:
+            visit(needed)
+        state[part] = "done"
+        order.append(part)
+
+    for c in deliberation.sub_claims:
+        visit(c.id)
+    return order
+
+
+def link_id(part: str) -> str:
+    return f"{part}.link"
+
+
 def live_ids(graph: ArgumentGraph, live: frozenset = DEFAULT_LIVE) -> set[str]:
     return {a.argument_id for a in graph.arguments if a.provenance.status in live}
 
 
 def to_framework(graph: ArgumentGraph, live: frozenset = DEFAULT_LIVE, *,
-                 use_preferences: bool = True) -> Af:
-    """argkit's `to_af`, with dcore's live set instead of curated-only."""
+                 use_preferences: bool = True, links: list[dict] | None = None) -> Af:
+    """argkit's `to_af`, with dcore's live set instead of curated-only, plus
+    one node per link to a part that does not hold.
+
+    A link to a part that fails attacks every argument resting on it, so they
+    fall. A link to a contested part attacks itself as well: it stays open,
+    and so, at best, do the arguments resting on it.
+    """
     members = live_ids(graph, live)
     edges = [(a.attacker_argument_id, a.attacked_argument_id)
              for a in derive_attacks(graph, use_preferences=use_preferences)
              if a.attacker_argument_id in members and a.attacked_argument_id in members]
-    return Af.of(members, edges)
+    nodes = set()
+    for link in links or []:
+        if link["effect"] == "holds" or link["argument"] not in members:
+            continue
+        node = link_id(link["part"])
+        nodes.add(node)
+        edges.append((node, link["argument"]))
+        if link["effect"] == "open":
+            edges.append((node, node))
+    return Af.of(members | nodes, edges)

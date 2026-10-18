@@ -47,6 +47,14 @@ def _hinge_line(hinge: dict, arguments: dict) -> str:
             f"or \"{tb}\" (then it is {ob}).")
 
 
+LINK_WORDS = {"open": "stays open until that part is settled", "fails": "falls with it"}
+
+
+def _link_lines(part: dict, arguments: dict) -> list[str]:
+    return [f"Rests on {link['part']}, which is {link['part_signal']}, so \"{arguments[link['argument']]['title']}\" "
+            f"{LINK_WORDS[link['effect']]}." for link in part.get("links", []) if link["effect"] != "holds"]
+
+
 def _at_a_glance(d: dict, parts: dict) -> list[str]:
     lines = ["| Part | Kind | Where it stands |", "|---|---|---|"]
     for c in d["sub_claims"]:
@@ -81,6 +89,7 @@ def _open(d: dict, parts: dict, arguments: dict) -> list[str]:
         lines.append(f"- **{c['id']}. {c['text']}** {part['signal'].capitalize()}. {part['plain']}")
         for hinge in part["hinges"]:
             lines.append(f"  - {_hinge_line(hinge, arguments)}")
+        lines += [f"  - {line}" for line in _link_lines(part, arguments)]
         lines.append(f"  - *What would settle it:* {c['settle_by']}")
     return lines or ["- Nothing is open."]
 
@@ -103,7 +112,11 @@ def _detail(d: dict, parts: dict, sources: dict, arguments: dict) -> list[str]:
                 role = ", an objection" if a.get("role") == "objection" else ""
                 lines.append(f"- **{a['title']}** ({_argument_state(a, part)}{role}). {a['reasoning']}")
                 for e in a["evidence"]:
-                    lines.append(f"  - {e['text']} ({_source_links(e['sources'], sources)})")
+                    if e.get("from_part"):
+                        signal = parts[e["from_part"]]["signal"]
+                        lines.append(f"  - {e['text']} (rests on {e['from_part']}, which is {signal})")
+                    else:
+                        lines.append(f"  - {e['text']} ({_source_links(e['sources'], sources)})")
                 if a["status"] == "curated_rejected" and a.get("check_note"):
                     lines.append(f"  - *Rejected because:* {a['check_note']}")
         attacks = [x for x in d["attacks"]
