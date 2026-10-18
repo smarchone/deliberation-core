@@ -1,6 +1,6 @@
 # Graph: Are the Chief Election Commissioner and the Union government working together to make India's elections unfair?
 
-Artifact `2a09e23b664b`. Green stands, grey falls, amber is open. Solid arrows argue for a part, dotted arrows against it, thick arrows are attacks.
+Artifact `bf4bff4f5367`. Green stands, grey falls, amber is open. Solid arrows argue for a part, dotted arrows against it, thick arrows are attacks.
 
 ## K1. Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners.
 
@@ -219,6 +219,8 @@ flowchart BT
   K12_O2["Losing some races does not rule out tilting close ones<br/><i>stands</i>"]:::stands
   K12_P1 -->|for| K12
   K12_C1 -.->|against| K12
+  link_K1(["K1: supported"]):::part
+  link_K1 -.->|rests on| K12_P1
   K12_O1 ==>|undercuts| K12_P1
   K12_O2 ==>|undercuts| K12_C1
   classDef part fill:#eef2ff,stroke:#4f46e5,color:#1e1b4b

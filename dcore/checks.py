@@ -17,7 +17,7 @@ from collections import Counter
 from argkit.qc import CheckIssue, Severity, run_deterministic_checks
 from argkit.schema import AttackType, CurationStatus
 
-from dcore.compile import compile_all
+from dcore.compile import compile_all, part_order
 from dcore.model import Deliberation, SourceKind, Stance, SubClaimKind
 
 # Heated words that belong in `question.original`, not in a sub-claim. A sub-claim
@@ -61,7 +61,13 @@ def _check_references(d: Deliberation) -> list[CheckIssue]:
         if not argument.evidence:
             issues.append(_blocking("no_evidence", argument.id, "an argument needs evidence"))
         for item in argument.evidence:
-            if not item.sources:
+            if item.from_part is not None:
+                if item.from_part not in sub_claims:
+                    issues.append(_blocking("unknown_part", item.id,
+                                            f"evidence rests on unknown part {item.from_part}"))
+                elif item.from_part == argument.sub_claim:
+                    issues.append(_blocking("self_link", item.id, "a part cannot rest on itself"))
+            elif not item.sources:
                 issues.append(_blocking("unsourced_evidence", item.id, "evidence cites no source"))
             for source_id in item.sources:
                 if source_id not in sources:
@@ -73,7 +79,7 @@ def _check_references(d: Deliberation) -> list[CheckIssue]:
             continue
         if source.sub_claim != target.sub_claim:
             issues.append(_blocking("cross_sub_claim_attack", attack.id,
-                                    "attacks must stay within one sub-claim in this version"))
+                                    "attacks stay within one sub-claim; link parts with from_part evidence"))
         if attack.type == AttackType.UNDERMINE:
             if attack.target_evidence not in {e.id for e in target.evidence}:
                 issues.append(_blocking("undermine_without_evidence", attack.id,
@@ -89,6 +95,16 @@ def _check_references(d: Deliberation) -> list[CheckIssue]:
                 issues.append(_blocking("unknown_sub_claim", action.id,
                                         f"action settles unknown sub-claim {sub_claim_id}"))
     return issues
+
+
+def _check_link_cycles(d: Deliberation) -> list[CheckIssue]:
+    """Parts may rest on each other, but never in a loop: each part is resolved
+    after the parts it rests on."""
+    try:
+        part_order(d)
+    except ValueError as error:
+        return [_blocking("link_cycle", str(error), "parts rest on each other in a loop")]
+    return []
 
 
 def _check_status_notes(d: Deliberation) -> list[CheckIssue]:
@@ -146,8 +162,8 @@ def _check_wording(d: Deliberation) -> list[CheckIssue]:
 
 
 def run_checks(d: Deliberation) -> list[CheckIssue]:
-    issues = (_check_unique_ids(d) + _check_references(d) + _check_status_notes(d)
-              + _check_sources(d) + _check_balance(d) + _check_wording(d))
+    issues = (_check_unique_ids(d) + _check_references(d) + _check_link_cycles(d)
+              + _check_status_notes(d) + _check_sources(d) + _check_balance(d) + _check_wording(d))
     if any(i.severity == Severity.BLOCKING for i in issues):
         return issues
     for sub_claim_id, graph in compile_all(d).items():

@@ -12,6 +12,7 @@
         "labels": {
           "K1.P1": "accepted"
         },
+        "links": [],
         "live_arguments": [
           "K1.P1"
         ],
@@ -29,6 +30,7 @@
         "labels": {
           "K10.P1": "accepted"
         },
+        "links": [],
         "live_arguments": [
           "K10.P1"
         ],
@@ -69,6 +71,7 @@
           "K11.C1": "undecided",
           "K11.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K11.C1",
           "K11.P1"
@@ -97,6 +100,15 @@
           "K12.O2": "accepted",
           "K12.P1": "rejected"
         },
+        "links": [
+          {
+            "argument": "K12.P1",
+            "effect": "holds",
+            "evidence": "K12.P1.e3",
+            "part": "K1",
+            "part_signal": "supported"
+          }
+        ],
         "live_arguments": [
           "K12.C1",
           "K12.O1",
@@ -138,6 +150,7 @@
           "K2.C1": "undecided",
           "K2.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K2.C1",
           "K2.P1"
@@ -154,6 +167,7 @@
         "labels": {
           "K3.P1": "accepted"
         },
+        "links": [],
         "live_arguments": [
           "K3.P1"
         ],
@@ -194,6 +208,7 @@
           "K4.C1": "undecided",
           "K4.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K4.C1",
           "K4.P1"
@@ -210,6 +225,7 @@
         "labels": {
           "K5.P1": "accepted"
         },
+        "links": [],
         "live_arguments": [
           "K5.P1"
         ],
@@ -250,6 +266,7 @@
           "K6.C1": "undecided",
           "K6.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K6.C1",
           "K6.P1"
@@ -289,6 +306,7 @@
           "K7.C1": "undecided",
           "K7.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K7.C1",
           "K7.P1"
@@ -313,6 +331,7 @@
           "K8.C1": "accepted",
           "K8.P1": "rejected"
         },
+        "links": [],
         "live_arguments": [
           "K8.C1",
           "K8.P1"
@@ -354,6 +373,7 @@
           "K9.C1": "undecided",
           "K9.P1": "undecided"
         },
+        "links": [],
         "live_arguments": [
           "K9.C1",
           "K9.P1"
@@ -446,6 +466,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K1.P1.e1",
             "sources": [
               "S01"
@@ -465,6 +486,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K2.P1.e1",
             "sources": [
               "S01"
@@ -472,6 +494,7 @@
             "text": "The Act replaced the arrangement set out in the Anoop Baranwal judgment, under which the Chief Justice of India sat on the panel, with a Cabinet Minister."
           },
           {
+            "from_part": null,
             "id": "K2.P1.e2",
             "sources": [
               "S01"
@@ -491,6 +514,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K2.C1.e1",
             "sources": [
               "S02"
@@ -498,6 +522,7 @@
             "text": "The ECI said commissioners were previously appointed by prime ministers, that since 2023 they are appointed under a law for the first time, and that \"obviously the new system is better\"."
           },
           {
+            "from_part": null,
             "id": "K2.C1.e2",
             "sources": [
               "S01"
@@ -517,6 +542,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K3.P1.e1",
             "sources": [
               "S04",
@@ -525,6 +551,7 @@
             "text": "About 65 lakh names were left out of the draft roll published on 1 August 2025; the Supreme Court had the ECI post the deleted names with reasons."
           },
           {
+            "from_part": null,
             "id": "K3.P1.e2",
             "sources": [
               "S05",
@@ -545,6 +572,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K4.P1.e1",
             "sources": [
               "S03"
@@ -552,6 +580,7 @@
             "text": "Petitioners challenged the requirement that voters absent from the 2002 rolls prove a link to someone on those rolls."
           },
           {
+            "from_part": null,
             "id": "K4.P1.e2",
             "sources": [
               "S04",
@@ -560,6 +589,7 @@
             "text": "During the hearings the court had the ECI publish the deleted names with reasons and, in September 2025, accept Aadhaar as a 12th document for identity."
           },
           {
+            "from_part": null,
             "id": "K4.P1.e3",
             "sources": [
               "S06"
@@ -579,6 +609,7 @@
         "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
         "evidence": [
           {
+            "from_part": null,
             "id": "K4.C1.e1",
             "sources": [
               "S03",
@@ -587,6 +618,7 @@
             "text": "On 27 May 2026 the Supreme Court upheld the ECI's power to conduct the SIR, including examining citizenship for inclusion on the rolls, and said it had not acted in excess of its statutory powers, with a presumption in favour of electors already on the rolls."
           },
           {
+            "from_part": null,
             "id": "K4.C1.e2",
             "sources": [
               "S06"
@@ -594,6 +626,7 @@
             "text": "In October 2025 the ECI's counsel told the court that no deleted voter had filed an appeal or complaint with it; the court said it could not hold a roving inquiry and asked for affidavits from those aggrieved, while ADR said it could produce 100."
           },
           {
+            "from_part": null,
             "id": "K4.C1.e3",
             "sources": [
               "S05"
@@ -613,6 +646,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K5.P1.e1",
             "sources": [
               "S07",
@@ -621,6 +655,7 @@
             "text": "The Karnataka CID's SIT chargesheet names a former BJP MLA and his son as prime accused in an alleged conspiracy to file 5,994 fraudulent deletion applications between December 2022 and February 2023."
           },
           {
+            "from_part": null,
             "id": "K5.P1.e2",
             "sources": [
               "S07"
@@ -640,6 +675,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K6.P1.e1",
             "sources": [
               "S07"
@@ -659,6 +695,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K6.C1.e1",
             "sources": [
               "S08"
@@ -678,6 +715,7 @@
         "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
         "evidence": [
           {
+            "from_part": null,
             "id": "K7.P1.e1",
             "sources": [
               "S09"
@@ -685,6 +723,7 @@
             "text": "Rahul Gandhi said a Congress research team found over one lakh fake votes in Mahadevapura out of about 6.5 lakh, in four categories: fake names, duplicates, invalid addresses and bulk additions."
           },
           {
+            "from_part": null,
             "id": "K7.P1.e2",
             "sources": [
               "S23"
@@ -704,6 +743,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K7.C1.e1",
             "sources": [
               "S02"
@@ -711,6 +751,7 @@
             "text": "EC sources said Maharashtra's electors rose 8.14% between the 2019 and 2024 assembly polls, less than Jharkhand (13.40%) or Telangana (16.16%) over their own cycles, and only 89 first appeals were filed after the rolls were finalised."
           },
           {
+            "from_part": null,
             "id": "K7.C1.e2",
             "sources": [
               "S09",
@@ -731,6 +772,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K8.P1.e1",
             "sources": [
               "S11"
@@ -750,6 +792,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K8.C1.e1",
             "sources": [
               "S11"
@@ -757,6 +800,7 @@
             "text": "In April 2024 the Supreme Court rejected all pleas for 100% VVPAT verification, including the suggestion to return to paper ballots, and made no finding of tampering."
           },
           {
+            "from_part": null,
             "id": "K8.C1.e2",
             "sources": [
               "S11"
@@ -776,6 +820,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K9.P1.e1",
             "sources": [
               "S13"
@@ -795,6 +840,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K9.C1.e1",
             "sources": [
               "S13"
@@ -802,6 +848,7 @@
             "text": "Congress president Mallikarjun Kharge received a similarly worded notice about complaints against him and Rahul Gandhi; the report says the Commission was holding party presidents responsible as a first step to rein in star campaigners."
           },
           {
+            "from_part": null,
             "id": "K9.C1.e2",
             "sources": [
               "S13"
@@ -821,6 +868,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K10.P1.e1",
             "sources": [
               "S14"
@@ -828,6 +876,7 @@
             "text": "In December 2024 Rule 93(2)(a) was amended, on the ECI's recommendation, so that only papers specified in the rules are open to public inspection, after a High Court ordered footage and documents released to a non-candidate."
           },
           {
+            "from_part": null,
             "id": "K10.P1.e2",
             "sources": [
               "S15"
@@ -847,6 +896,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K11.P1.e1",
             "sources": [
               "S16",
@@ -855,6 +905,7 @@
             "text": "The Indian Express reported that Commissioners Sukhbir Singh Sandhu and Vivek Joshi recorded objections at least 14 times over ten months, on voter additions and deletions, Form 6, and control of the roll database."
           },
           {
+            "from_part": null,
             "id": "K11.P1.e2",
             "sources": [
               "S16",
@@ -875,6 +926,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K11.C1.e1",
             "sources": [
               "S16"
@@ -891,9 +943,10 @@
         "title": "The ECI says its decisions were unanimous"
       },
       {
-        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording). In version 2, linked to part K1's result for the selection-panel point; no new source.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K12.P1.e1",
             "sources": [
               "S18"
@@ -901,11 +954,18 @@
             "text": "Removal notices against the CEC signed by 130 Lok Sabha and 63 Rajya Sabha MPs were declined in April 2026; the bulletins gave no specific reasons, though the Rajya Sabha Chairman was reported to have found no prima facie case of misbehaviour."
           },
           {
+            "from_part": null,
             "id": "K12.P1.e2",
             "sources": [
               "S12"
             ],
             "text": "A 2023 paper by Sabyasachi Das, not peer reviewed at the time, found the BJP won a disproportionate share of close 2019 contests, concentrated in BJP-ruled states."
+          },
+          {
+            "from_part": "K1",
+            "id": "K12.P1.e3",
+            "sources": [],
+            "text": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
           }
         ],
         "id": "K12.P1",
@@ -920,6 +980,7 @@
         "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
         "evidence": [
           {
+            "from_part": null,
             "id": "K12.C1.e1",
             "sources": [
               "S19"
@@ -927,6 +988,7 @@
             "text": "In the 2024 Lok Sabha election the BJP won 240 seats, short of the 272 majority mark; the NDA won 293 and formed the government."
           },
           {
+            "from_part": null,
             "id": "K12.C1.e2",
             "sources": [
               "S20",
@@ -947,6 +1009,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K12.O1.e1",
             "sources": [
               "S03"
@@ -954,6 +1017,7 @@
             "text": "The Supreme Court upheld the SIR as within the ECI's powers."
           },
           {
+            "from_part": null,
             "id": "K12.O1.e2",
             "sources": [
               "S12"
@@ -973,6 +1037,7 @@
         "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
         "evidence": [
           {
+            "from_part": null,
             "id": "K12.O2.e1",
             "sources": [
               "S12"
@@ -1120,7 +1185,7 @@
         "type": "undercut"
       }
     ],
-    "based_on": null,
+    "based_on": "2a09e23b664b90612ffed4fa04a189a788193e3aa22e5ed5692176c14c6e8198",
     "generation": {
       "created_at": "2026-10-18T01:30:00+00:00",
       "cross_checker": "a second, independent Claude agent that opened every cited source",
@@ -1479,7 +1544,7 @@
         "text": "The CEC and the Union government are acting together to tilt elections toward the ruling party."
       }
     ],
-    "version": 1
+    "version": 2
   },
   "engine": {
     "argkit": "5e0194b00533",
@@ -1901,12 +1966,13 @@
           "inference_id": "K12.P1.inference",
           "premise_ids": [
             "K12.P1.e1",
-            "K12.P1.e2"
+            "K12.P1.e2",
+            "K12.P1.e3"
           ],
           "provenance": {
             "confidence": 0.5,
             "created_at": "2026-10-18T01:30:00Z",
-            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording). In version 2, linked to part K1's result for the selection-panel point; no new source.",
             "generator_model": "claude (deliberate skill)",
             "prompt_id": null,
             "prompt_sha256": null,
@@ -2079,6 +2145,20 @@
           "text": "A 2023 paper by Sabyasachi Das, not peer reviewed at the time, found the BJP won a disproportionate share of close 2019 contests, concentrated in BJP-ruled states."
         },
         {
+          "node_id": "K12.P1.e3",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
+        },
+        {
           "node_id": "K12.C1.e1",
           "provenance": {
             "confidence": 0.5,
@@ -2155,7 +2235,8 @@
           "node_id": "K12.P1.inference",
           "premise_ids": [
             "K12.P1.e1",
-            "K12.P1.e2"
+            "K12.P1.e2",
+            "K12.P1.e3"
           ],
           "provenance": {
             "confidence": 0.5,
@@ -3891,6 +3972,12 @@
         "message": "only one publisher (Scroll) backs this",
         "severity": "warning",
         "target_id": "K12.O2.e1"
+      },
+      {
+        "kind": "missing_citation",
+        "message": "evidence node has no source citation",
+        "severity": "warning",
+        "target_id": "K12:K12.P1.e3"
       }
     ]
   },

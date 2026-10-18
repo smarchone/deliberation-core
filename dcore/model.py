@@ -79,9 +79,14 @@ class SubClaim(_Strict):
 
 
 class Evidence(_Strict):
+    """One checkable statement. With `from_part`, the statement is another
+    part's result instead ("K1 holds"): it cites no sources of its own and holds
+    only while that part's supporting case stands."""
+
     id: str
     text: str
-    sources: list[str]
+    sources: list[str] = []
+    from_part: str | None = None
 
 
 class Argument(_Strict):
