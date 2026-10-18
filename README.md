@@ -68,6 +68,25 @@ previous hash, and freeze again.
 "CEC and modi government, together are trying to rig Indian democracy", in 12 parts
 ([graph](claims/cec-government-elections/graph.md); open `graph.html` in a browser to explore it).
 
+## Debate map (separate skill)
+
+[`debate-map`](.claude/skills/debate-map/SKILL.md) turns a recorded debate,
+townhall or podcast on YouTube into one HTML page: the thread of claims,
+replies, challenges and questions (each timestamped and linked into the video)
+plus a "how this debate went" report with per-voice stats. Claude does the
+judging; three small stdlib scripts do the plumbing (`fetch.py` gets captions
+or reads a pasted transcript, `check.py` validates the map and counts the
+stats, `render.py` draws the page). It doesn't use dcore or argkit, and it
+doesn't fact-check.
+
+```bash
+S=.claude/skills/debate-map/scripts
+python $S/fetch.py <youtube-url> --out debates/<id>     # or --from pasted.txt
+# Claude writes debates/<id>/map.json (see the skill)
+python $S/check.py debates/<id>
+python $S/render.py debates/<id>                         # debates/<id>/page.html
+```
+
 ## Limits
 
 - Parts link only through evidence: an argument can rest on another part's
