@@ -13,9 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install (with PyArg oracle)
+      - name: Install
         run: pip install -e ".[dev]"
-      - name: Run suite (engine canon + 1000-AF differential vs PyArg + dcore)
+      - name: Run suite
         run: pytest -q
       - name: Verify every frozen deliberation rebuilds byte for byte
         run: |

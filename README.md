@@ -21,12 +21,13 @@ on a person or a side.
 - **`dcore` does the strict work**, with no model and no network: deterministic
   checks, compiling each part into an argument graph, computing what stands,
   and freezing a byte-reproducible, SHA-256-stamped artifact and report.
-- **The argument engine is argkit**, vendored unchanged from
+- **The argument engine is argkit**, from
   [tarionai/defeasible-argumentation](https://github.com/tarionai/defeasible-argumentation)
-  (MIT): a Dung grounded-semantics engine differential-tested against PyArg on
-  1,000 random frameworks, typed attacks (rebut, undermine, undercut), and a
-  provenance state machine (candidate, cross-checked, accepted, rejected). See
-  [`argkit/VENDORED.md`](argkit/VENDORED.md).
+  (MIT), installed as a dependency pinned to one commit: a Dung grounded-semantics
+  engine differential-tested upstream against PyArg, typed attacks (rebut,
+  undermine, undercut), and a provenance state machine (candidate, cross-checked,
+  accepted, rejected). It is pinned because an engine change could change frozen
+  artifacts; the hash test on every frozen deliberation catches that.
 
 ## What the report says about each part
 
@@ -43,7 +44,7 @@ on a person or a side.
 
 ```bash
 pip install -e ".[dev]"
-pytest                                             # engine + dcore tests
+pytest                                             # dcore tests + frozen-artifact hash check
 python -m dcore check   deliberations/<id>         # list issues
 python -m dcore analyse deliberations/<id>         # preview where each part stands
 python -m dcore freeze  deliberations/<id>         # write artifact.v1.json, report.md, SHA256SUMS

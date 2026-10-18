@@ -3,8 +3,8 @@
 Claude does the judgment work through the `deliberate` skill (collect,
 normalise, research, cross-check). dcore does the strict work: check the file,
 compile it into argument graphs, compute what stands, and freeze a hash-stamped
-artifact and report. The argument engine is argkit, vendored from
-tarionai/defeasible-argumentation.
+artifact and report. The argument engine is argkit, from
+tarionai/defeasible-argumentation, pinned in pyproject.toml.
 
   model    the deliberation file schema
   compile  deliberation -> one argkit graph per sub-claim
