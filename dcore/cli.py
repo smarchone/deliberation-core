@@ -3,7 +3,7 @@
   check    run the deterministic checks and list every issue
   analyse  print where each part stands (no files written)
   freeze   write artifact.v1.json, report.md and SHA256SUMS
-  verify   rebuild from deliberation.json and confirm the hashes match
+  verify   rebuild from claims.json and confirm the hashes match
   curate   record a person's decision on an argument (accept or reject, with a note)
 """
 
@@ -21,7 +21,7 @@ from dcore.freeze import ARTIFACT_NAME, SUMS_NAME, build_artifact, freeze, load,
 
 
 def _check(folder: Path) -> int:
-    issues = run_checks(load(folder / "deliberation.json"))
+    issues = run_checks(load(folder / "claims.json"))
     for issue in issues:
         print(f"{issue.severity.value:8} {issue.kind:28} {issue.target_id}: {issue.message}")
     stopping = blocking(issues)
@@ -30,7 +30,7 @@ def _check(folder: Path) -> int:
 
 
 def _analyse(folder: Path) -> int:
-    deliberation = load(folder / "deliberation.json")
+    deliberation = load(folder / "claims.json")
     if blocking(run_checks(deliberation)):
         print("blocking issues; run `check` first")
         return 1
@@ -50,7 +50,7 @@ def _freeze(folder: Path) -> int:
 
 
 def _verify(folder: Path) -> int:
-    rebuilt = hashlib.sha256(render_json(build_artifact(load(folder / "deliberation.json")))
+    rebuilt = hashlib.sha256(render_json(build_artifact(load(folder / "claims.json")))
                              .encode("utf-8")).hexdigest()
     on_disk = hashlib.sha256((folder / ARTIFACT_NAME).read_bytes()).hexdigest()
     recorded = (folder / SUMS_NAME).read_text(encoding="utf-8").split()[0]
@@ -60,7 +60,7 @@ def _verify(folder: Path) -> int:
 
 
 def _curate(folder: Path, argument_id: str, accept: bool, note: str) -> int:
-    path = folder / "deliberation.json"
+    path = folder / "claims.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     argument = next((a for a in data["arguments"] if a["id"] == argument_id), None)
     if argument is None:

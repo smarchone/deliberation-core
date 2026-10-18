@@ -11,7 +11,7 @@ tarionai/defeasible-argumentation, pinned in pyproject.toml.
   checks   deterministic checks (dcore's own, then argkit's)
   analyse  signals per sub-claim, and what each one hinges on
   report   the findings report, templated from the artifact
-  freeze   deliberation.json -> artifact + report + SHA256SUMS
+  freeze   claims.json -> artifact + report + SHA256SUMS
   cli      python -m dcore {check,analyse,freeze,verify}
 """
 

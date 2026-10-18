@@ -8,7 +8,7 @@ description: Turn a heated public claim into a fair, checkable reasoning artifac
 You do the judgment work; `dcore` does the strict work. Never hand-write a
 signal, a verdict or a hash: the scripts compute those from the file you write.
 
-The output is a folder `deliberations/<id>/` holding `deliberation.json` (yours),
+The output is a folder `claims/<id>/` holding `claims.json` (yours),
 and `artifact.v1.json`, `report.md`, `SHA256SUMS` (built by `dcore`).
 
 ## Principles (non-negotiable)
@@ -58,7 +58,7 @@ and `artifact.v1.json`, `report.md`, `SHA256SUMS` (built by `dcore`).
    audit, publishing a record, a timed pilot), plus one small step any citizen
    can take.
 
-6. **Verify.** Run `python -m dcore check deliberations/<id>` and fix every
+6. **Verify.** Run `python -m dcore check claims/<id>` and fix every
    blocking issue. Then cross-check: start a second, independent agent that
    opens every cited source and reports, per evidence item, `confirmed`,
    `needs_fix` (with corrected text) or `unsupported`. Apply its fixes. Set an
@@ -79,5 +79,5 @@ and `artifact.v1.json`, `report.md`, `SHA256SUMS` (built by `dcore`).
 
 ## File shape
 
-See `deliberations/cec-government-elections/deliberation.json` for a full
+See `claims/cec-government-elections/claims.json` for a full
 example, and `dcore/model.py` for every field.

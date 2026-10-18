@@ -12,7 +12,7 @@ from dcore.checks import blocking, run_checks
 from dcore.freeze import ARTIFACT_NAME, SUMS_NAME, build_artifact, freeze, load, render_json
 from dcore.model import Deliberation
 
-EXAMPLE = Path(__file__).resolve().parent.parent / "deliberations" / "cec-government-elections"
+EXAMPLE = Path(__file__).resolve().parent.parent / "claims" / "cec-government-elections"
 
 
 def _evidence(argument_id: str, source: str = "S1") -> list[dict]:
@@ -107,15 +107,15 @@ def test_freeze_is_byte_reproducible(tmp_path):
     for run in ("a", "b"):
         folder = tmp_path / run
         folder.mkdir()
-        (folder / "deliberation.json").write_text(json.dumps(_base()), encoding="utf-8")
+        (folder / "claims.json").write_text(json.dumps(_base()), encoding="utf-8")
         freeze(folder)
     assert (tmp_path / "a" / ARTIFACT_NAME).read_bytes() == (tmp_path / "b" / ARTIFACT_NAME).read_bytes()
 
 
 def test_frozen_example_matches_its_source():
     """Deploy guard: the committed example artifact is exactly what its
-    deliberation.json builds to, and its recorded hash is right."""
+    claims.json builds to, and its recorded hash is right."""
     payload = (EXAMPLE / ARTIFACT_NAME).read_bytes()
     recorded = (EXAMPLE / SUMS_NAME).read_text(encoding="utf-8").split()[0]
     assert hashlib.sha256(payload).hexdigest() == recorded
-    assert render_json(build_artifact(load(EXAMPLE / "deliberation.json"))).encode("utf-8") == payload
+    assert render_json(build_artifact(load(EXAMPLE / "claims.json"))).encode("utf-8") == payload

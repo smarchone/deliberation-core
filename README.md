@@ -1,66 +1,71 @@
 # deliberation-core
 
-Takes a claim from anywhere, breaks it into checkable parts, gathers each side's
-strongest case with sources, and freezes the result as a shareable, verifiable
-reasoning artifact: an argument graph plus a findings report that says what is
-settled, what is open, what would settle it, and what both sides could do next.
-
-It is the engine behind the JNJ deliberation surfaces. It never gives a verdict
-on a person or a side.
+Turns a heated claim into a shareable, verifiable reasoning artifact: an
+argument graph plus a report of what is settled, what is open, what would
+settle it, and what both sides could do next. It never gives a verdict on a
+person or a side.
 
 ## How it works
 
-```
- claim ──▶ Claude (deliberate skill) ──▶ deliberation.json ──▶ dcore ──▶ artifact + report
-           collect, split, research,                           check, compute what stands,
-           cross-check sources                                 find hinges, freeze + hash
-```
+The work is split in two:
 
-- **Claude does the judgment work** through the skill in
-  [`.claude/skills/deliberate/SKILL.md`](.claude/skills/deliberate/SKILL.md).
-- **`dcore` does the strict work**, with no model and no network: deterministic
-  checks, compiling each part into an argument graph, computing what stands,
-  and freezing a byte-reproducible, SHA-256-stamped artifact and report.
-- **The argument engine is argkit**, from
-  [tarionai/defeasible-argumentation](https://github.com/tarionai/defeasible-argumentation)
-  (MIT), installed as a dependency pinned to one commit: a Dung grounded-semantics
-  engine differential-tested upstream against PyArg, typed attacks (rebut,
-  undermine, undercut), and a provenance state machine (candidate, cross-checked,
-  accepted, rejected). It is pinned because an engine change could change frozen
-  artifacts; the hash test on every frozen deliberation catches that.
+- **Claude makes the judgments.** Through the
+  [`deliberate`](.claude/skills/deliberate/SKILL.md) skill, it splits the claim
+  into parts, researches each side's strongest case with sources, and builds the
+  argument graph: which argument supports, challenges or attacks which. It
+  writes this to `claims/<id>/claims.json`, and a second agent cross-checks
+  every source.
+- **Code resolves what survives, deterministically.** `dcore` checks the file,
+  compiles each part into an argument graph, and hands it to
+  [argkit](https://github.com/tarionai/defeasible-argumentation) (MIT, pinned to
+  one commit). argkit's grounded-semantics engine computes what stands, what
+  falls and what stays open. dcore then freezes the result as a hash-stamped
+  artifact and report. There's no model, network or clock in this step.
 
-## What the report says about each part
+So a sceptic can dispute any judgment in `claims.json`, but not how it was
+resolved: anyone can rebuild the artifact and get the same hash.
 
-| Word | Meaning |
-|---|---|
-| supported | the supporting case holds up and no challenge stands |
-| challenged | a challenge holds up and the supporting case does not |
-| both hold in part | each side has a point the other does not defeat |
-| contested | the two sides block each other; the report says what it hinges on |
-| unproven either way | neither side's case survives the challenges against it |
-| unverified | nothing has passed checking yet |
+Each part ends up as one of: **supported**, **challenged**, **both hold in
+part**, **contested** (with what it hinges on), **unproven either way**, or
+**unverified**.
 
 ## Use
 
 ```bash
 pip install -e ".[dev]"
-pytest                                             # dcore tests + frozen-artifact hash check
-python -m dcore check   deliberations/<id>         # list issues
-python -m dcore analyse deliberations/<id>         # preview where each part stands
-python -m dcore freeze  deliberations/<id>         # write artifact.v1.json, report.md, SHA256SUMS
-python -m dcore verify  deliberations/<id>         # rebuild and confirm the hash
-python -m dcore curate  deliberations/<id> K2.P1 --accept --note "checked the judgment"
 ```
 
-## First deliberation
+An example pipeline, for the claim "The city's plastic ban failed":
 
-[`deliberations/cec-government-elections`](deliberations/cec-government-elections/report.md):
-"CEC and modi government, together are trying to rig Indian democracy", split
-into 12 parts.
+```bash
+# 1. In Claude Code, Claude researches and writes claims/plastic-ban/claims.json,
+#    runs the checks, and has a second agent cross-check the sources.
+/deliberate "The city's plastic ban failed"
 
-## Limits of this version
+# 2. Preview where each part stands (writes nothing).
+python -m dcore analyse claims/plastic-ban
+#   K1  contested   hinge: K1.C1 vs K1.P1
 
-- Attacks stay within one part; the parts are not linked to each other yet.
-- Cross-checking is a second model pass, not a person. The report says so
-  until someone curates it.
-- One deliberation, one language (English), sources gathered by hand-run search.
+# 3. A person reviews, signing off on or rejecting arguments.
+python -m dcore curate claims/plastic-ban K1.C1 --accept --note "checked the survey"
+
+# 4. Freeze: artifact.v1.json, report.md and SHA256SUMS.
+python -m dcore freeze claims/plastic-ban
+
+# 5. Anyone can rebuild it and confirm the hash.
+python -m dcore verify claims/plastic-ban
+#   OK
+```
+
+New evidence later: edit `claims.json`, bump `version`, set `based_on` to the
+previous hash, and freeze again.
+
+## First claim
+
+[`claims/cec-government-elections`](claims/cec-government-elections/report.md):
+"CEC and modi government, together are trying to rig Indian democracy", in 12 parts.
+
+## Limits
+
+- Parts aren't linked to each other yet; attacks stay within one part.
+- Cross-checking is a second model pass, not a person, and the report says so.

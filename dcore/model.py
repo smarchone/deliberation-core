@@ -1,6 +1,6 @@
 """The deliberation file: what Claude writes, and what every script reads.
 
-One file per deliberation (`deliberations/<id>/deliberation.json`). It holds the
+One file per deliberation (`claims/<id>/claims.json`). It holds the
 front half of the core (collected and normalised claims, the research, each
 side's case, values, actions) in a form a person can read and edit by hand.
 `dcore.compile` turns it into argkit graphs for the back half.

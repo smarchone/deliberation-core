@@ -19,7 +19,7 @@ jobs:
         run: pytest -q
       - name: Verify every frozen deliberation rebuilds byte for byte
         run: |
-          for d in deliberations/*/; do
+          for d in claims/*/; do
             python -m dcore verify "$d"
             (cd "$d" && sha256sum -c SHA256SUMS)
           done

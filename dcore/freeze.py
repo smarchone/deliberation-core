@@ -1,7 +1,7 @@
 """Freeze: deliberation file -> frozen, hash-stamped artifact plus report.
 
 Deterministic end to end: no model, no clock, no network. The same
-deliberation.json always produces the same bytes, so anyone can rebuild an
+claims.json always produces the same bytes, so anyone can rebuild an
 artifact and check its hash. A deliberation with blocking issues is never
 frozen.
 """
@@ -50,9 +50,9 @@ def render_json(artifact: dict) -> str:
 
 
 def freeze(folder: Path) -> tuple[Path, str]:
-    """Build `folder/deliberation.json` into the artifact, report and sums."""
+    """Build `folder/claims.json` into the artifact, report and sums."""
     folder = Path(folder)
-    artifact = build_artifact(load(folder / "deliberation.json"))
+    artifact = build_artifact(load(folder / "claims.json"))
     payload = render_json(artifact).encode("utf-8")
     digest = hashlib.sha256(payload).hexdigest()
     (folder / ARTIFACT_NAME).write_bytes(payload)
