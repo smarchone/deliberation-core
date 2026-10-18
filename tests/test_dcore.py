@@ -9,7 +9,7 @@ from pathlib import Path
 
 from dcore.analyse import analyse
 from dcore.checks import blocking, run_checks
-from dcore.freeze import ARTIFACT_NAME, SUMS_NAME, build_artifact, freeze, load, render_json
+from dcore.freeze import ARTIFACT_NAME, GRAPH_NAME, SUMS_NAME, build_artifact, freeze, load, render_json
 from dcore.model import Deliberation
 
 EXAMPLE = Path(__file__).resolve().parent.parent / "claims" / "cec-government-elections"
@@ -110,6 +110,8 @@ def test_freeze_is_byte_reproducible(tmp_path):
         (folder / "claims.json").write_text(json.dumps(_base()), encoding="utf-8")
         freeze(folder)
     assert (tmp_path / "a" / ARTIFACT_NAME).read_bytes() == (tmp_path / "b" / ARTIFACT_NAME).read_bytes()
+    graph = (tmp_path / "a" / GRAPH_NAME).read_text(encoding="utf-8")
+    assert "```mermaid" in graph and "K1" in graph
 
 
 def test_frozen_example_matches_its_source():

@@ -49,7 +49,8 @@ python -m dcore analyse claims/plastic-ban
 # 3. A person reviews, signing off on or rejecting arguments.
 python -m dcore curate claims/plastic-ban K1.C1 --accept --note "checked the survey"
 
-# 4. Freeze: artifact.v1.json, report.md and SHA256SUMS.
+# 4. Freeze: artifact.v1.json, report.md, graph.md (Mermaid diagrams of each
+#    part's argument graph) and SHA256SUMS. `viz` redraws graph.md on its own.
 python -m dcore freeze claims/plastic-ban
 
 # 5. Anyone can rebuild it and confirm the hash.
@@ -63,7 +64,8 @@ previous hash, and freeze again.
 ## First claim
 
 [`claims/cec-government-elections`](claims/cec-government-elections/report.md):
-"CEC and modi government, together are trying to rig Indian democracy", in 12 parts.
+"CEC and modi government, together are trying to rig Indian democracy", in 12 parts
+([graph](claims/cec-government-elections/graph.md)).
 
 ## Limits
 

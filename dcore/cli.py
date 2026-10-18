@@ -2,7 +2,8 @@
 
   check    run the deterministic checks and list every issue
   analyse  print where each part stands (no files written)
-  freeze   write artifact.v1.json, report.md and SHA256SUMS
+  freeze   write artifact.v1.json, report.md, graph.md and SHA256SUMS
+  viz      redraw graph.md from the frozen artifact
   verify   rebuild from claims.json and confirm the hashes match
   curate   record a person's decision on an argument (accept or reject, with a note)
 """
@@ -17,7 +18,9 @@ from pathlib import Path
 
 from dcore.analyse import analyse
 from dcore.checks import blocking, run_checks
-from dcore.freeze import ARTIFACT_NAME, SUMS_NAME, build_artifact, freeze, load, render_json
+from dcore.freeze import (ARTIFACT_NAME, GRAPH_NAME, SUMS_NAME, build_artifact, freeze, load,
+                          render_json)
+from dcore.viz import render_graph
 
 
 def _check(folder: Path) -> int:
@@ -49,6 +52,14 @@ def _freeze(folder: Path) -> int:
     return 0
 
 
+def _viz(folder: Path) -> int:
+    payload = (folder / ARTIFACT_NAME).read_bytes()
+    digest = hashlib.sha256(payload).hexdigest()
+    (folder / GRAPH_NAME).write_text(render_graph(json.loads(payload), digest), encoding="utf-8")
+    print(f"wrote {folder / GRAPH_NAME}")
+    return 0
+
+
 def _verify(folder: Path) -> int:
     rebuilt = hashlib.sha256(render_json(build_artifact(load(folder / "claims.json")))
                              .encode("utf-8")).hexdigest()
@@ -76,7 +87,7 @@ def _curate(folder: Path, argument_id: str, accept: bool, note: str) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="dcore")
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("check", "analyse", "freeze", "verify"):
+    for name in ("check", "analyse", "freeze", "viz", "verify"):
         sub.add_parser(name).add_argument("folder", type=Path)
     curate = sub.add_parser("curate")
     curate.add_argument("folder", type=Path)
@@ -88,7 +99,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.command == "curate":
         return _curate(args.folder, args.argument_id, args.accept, args.note)
-    return {"check": _check, "analyse": _analyse, "freeze": _freeze, "verify": _verify}[args.command](args.folder)
+    return {"check": _check, "analyse": _analyse, "freeze": _freeze, "viz": _viz,
+            "verify": _verify}[args.command](args.folder)
 
 
 if __name__ == "__main__":
