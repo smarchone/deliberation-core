@@ -1,4 +1,4 @@
-"""Freeze: claims file -> frozen, hash-stamped artifact plus report and graph.
+"""Freeze: claims file -> frozen, hash-stamped artifact plus report and graphs.
 
 Deterministic end to end: no model, no clock, no network. The same
 claims.json always produces the same bytes, so anyone can rebuild an
@@ -18,11 +18,12 @@ from dcore.checks import blocking, run_checks
 from dcore.compile import compile_all
 from dcore.model import Deliberation
 from dcore.report import render_report
-from dcore.viz import render_graph
+from dcore.viz import render_graph, render_html
 
 ARTIFACT_NAME = "artifact.v1.json"
 REPORT_NAME = "report.md"
 GRAPH_NAME = "graph.md"
+PAGE_NAME = "graph.html"
 SUMS_NAME = "SHA256SUMS"
 
 
@@ -52,7 +53,7 @@ def render_json(artifact: dict) -> str:
 
 
 def freeze(folder: Path) -> tuple[Path, str]:
-    """Build `folder/claims.json` into the artifact, report, graph and sums."""
+    """Build `folder/claims.json` into the artifact, report, graphs and sums."""
     folder = Path(folder)
     artifact = build_artifact(load(folder / "claims.json"))
     payload = render_json(artifact).encode("utf-8")
@@ -62,7 +63,10 @@ def freeze(folder: Path) -> tuple[Path, str]:
     (folder / REPORT_NAME).write_bytes(report)
     graph = render_graph(artifact, digest).encode("utf-8")
     (folder / GRAPH_NAME).write_bytes(graph)
+    page = render_html(artifact, digest).encode("utf-8")
+    (folder / PAGE_NAME).write_bytes(page)
     sums = (f"{digest}  {ARTIFACT_NAME}\n"
+            f"{hashlib.sha256(page).hexdigest()}  {PAGE_NAME}\n"
             f"{hashlib.sha256(graph).hexdigest()}  {GRAPH_NAME}\n"
             f"{hashlib.sha256(report).hexdigest()}  {REPORT_NAME}\n")
     (folder / SUMS_NAME).write_bytes(sums.encode("utf-8"))
