@@ -121,7 +121,7 @@ def _page_part(d: dict, claim: dict, part: dict, sources: dict, arguments: dict)
 
 
 def render_html(artifact: dict, digest: str) -> str:
-    """A self-contained page: pick a part, see its graph, tap a box for why."""
+    """A self-contained page: the parts on one map, then each part's two sides in plain words."""
     d = artifact["deliberation"]
     parts = artifact["analysis"]["parts"]
     sources = {s["id"]: s for s in d["sources"]}
@@ -129,6 +129,7 @@ def render_html(artifact: dict, digest: str) -> str:
     data = {
         "question": d["question"], "as_of": d["as_of"], "version": d["version"], "digest": digest,
         "parts": [_page_part(d, c, parts[c["id"]], sources, arguments) for c in d["sub_claims"]],
+        "actions": [{k: a[k] for k in ("text", "who", "settles", "why_both_sides")} for a in d["actions"]],
     }
     payload = json.dumps(data, sort_keys=True, ensure_ascii=False).replace("</", "<\\/")
     return PAGE.replace("__TITLE__", html.escape(d["question"]["plain"])).replace("__DATA__", payload)
