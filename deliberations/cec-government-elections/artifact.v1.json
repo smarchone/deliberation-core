@@ -1,0 +1,3898 @@
+{
+  "analysis": {
+    "live_statuses": [
+      "cross_checked",
+      "curated_accepted"
+    ],
+    "parts": {
+      "K1": {
+        "attacks": [],
+        "depends_on_judgment": [],
+        "hinges": [],
+        "labels": {
+          "K1.P1": "accepted"
+        },
+        "live_arguments": [
+          "K1.P1"
+        ],
+        "not_live": [],
+        "plain": "The supporting case holds up, and no challenge to it stands.",
+        "rests_on": [
+          "K1.P1"
+        ],
+        "signal": "supported"
+      },
+      "K10": {
+        "attacks": [],
+        "depends_on_judgment": [],
+        "hinges": [],
+        "labels": {
+          "K10.P1": "accepted"
+        },
+        "live_arguments": [
+          "K10.P1"
+        ],
+        "not_live": [],
+        "plain": "The supporting case holds up, and no challenge to it stands.",
+        "rests_on": [
+          "K10.P1"
+        ],
+        "signal": "supported"
+      },
+      "K11": {
+        "attacks": [
+          [
+            "K11.C1",
+            "K11.P1"
+          ],
+          [
+            "K11.P1",
+            "K11.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K11.C1",
+              "K11.P1"
+            ],
+            "if_stronger": {
+              "K11.C1": "challenged",
+              "K11.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K11.C1": "undecided",
+          "K11.P1": "undecided"
+        },
+        "live_arguments": [
+          "K11.C1",
+          "K11.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      },
+      "K12": {
+        "attacks": [
+          [
+            "K12.O1",
+            "K12.P1"
+          ],
+          [
+            "K12.O2",
+            "K12.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [],
+        "labels": {
+          "K12.C1": "rejected",
+          "K12.O1": "accepted",
+          "K12.O2": "accepted",
+          "K12.P1": "rejected"
+        },
+        "live_arguments": [
+          "K12.C1",
+          "K12.O1",
+          "K12.O2",
+          "K12.P1"
+        ],
+        "not_live": [],
+        "plain": "Neither side's case survives the challenges against it.",
+        "rests_on": [],
+        "signal": "unproven either way"
+      },
+      "K2": {
+        "attacks": [
+          [
+            "K2.C1",
+            "K2.P1"
+          ],
+          [
+            "K2.P1",
+            "K2.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K2.C1",
+              "K2.P1"
+            ],
+            "if_stronger": {
+              "K2.C1": "challenged",
+              "K2.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K2.C1": "undecided",
+          "K2.P1": "undecided"
+        },
+        "live_arguments": [
+          "K2.C1",
+          "K2.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      },
+      "K3": {
+        "attacks": [],
+        "depends_on_judgment": [],
+        "hinges": [],
+        "labels": {
+          "K3.P1": "accepted"
+        },
+        "live_arguments": [
+          "K3.P1"
+        ],
+        "not_live": [],
+        "plain": "The supporting case holds up, and no challenge to it stands.",
+        "rests_on": [
+          "K3.P1"
+        ],
+        "signal": "supported"
+      },
+      "K4": {
+        "attacks": [
+          [
+            "K4.C1",
+            "K4.P1"
+          ],
+          [
+            "K4.P1",
+            "K4.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K4.C1",
+              "K4.P1"
+            ],
+            "if_stronger": {
+              "K4.C1": "challenged",
+              "K4.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K4.C1": "undecided",
+          "K4.P1": "undecided"
+        },
+        "live_arguments": [
+          "K4.C1",
+          "K4.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      },
+      "K5": {
+        "attacks": [],
+        "depends_on_judgment": [],
+        "hinges": [],
+        "labels": {
+          "K5.P1": "accepted"
+        },
+        "live_arguments": [
+          "K5.P1"
+        ],
+        "not_live": [],
+        "plain": "The supporting case holds up, and no challenge to it stands.",
+        "rests_on": [
+          "K5.P1"
+        ],
+        "signal": "supported"
+      },
+      "K6": {
+        "attacks": [
+          [
+            "K6.C1",
+            "K6.P1"
+          ],
+          [
+            "K6.P1",
+            "K6.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K6.C1",
+              "K6.P1"
+            ],
+            "if_stronger": {
+              "K6.C1": "challenged",
+              "K6.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K6.C1": "undecided",
+          "K6.P1": "undecided"
+        },
+        "live_arguments": [
+          "K6.C1",
+          "K6.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      },
+      "K7": {
+        "attacks": [
+          [
+            "K7.C1",
+            "K7.P1"
+          ],
+          [
+            "K7.P1",
+            "K7.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K7.C1",
+              "K7.P1"
+            ],
+            "if_stronger": {
+              "K7.C1": "challenged",
+              "K7.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K7.C1": "undecided",
+          "K7.P1": "undecided"
+        },
+        "live_arguments": [
+          "K7.C1",
+          "K7.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      },
+      "K8": {
+        "attacks": [
+          [
+            "K8.C1",
+            "K8.P1"
+          ]
+        ],
+        "depends_on_judgment": [
+          "PR8"
+        ],
+        "hinges": [],
+        "labels": {
+          "K8.C1": "accepted",
+          "K8.P1": "rejected"
+        },
+        "live_arguments": [
+          "K8.C1",
+          "K8.P1"
+        ],
+        "not_live": [],
+        "plain": "A challenge holds up, and the supporting case does not.",
+        "rests_on": [
+          "K8.C1"
+        ],
+        "signal": "challenged"
+      },
+      "K9": {
+        "attacks": [
+          [
+            "K9.C1",
+            "K9.P1"
+          ],
+          [
+            "K9.P1",
+            "K9.C1"
+          ]
+        ],
+        "depends_on_judgment": [],
+        "hinges": [
+          {
+            "between": [
+              "K9.C1",
+              "K9.P1"
+            ],
+            "if_stronger": {
+              "K9.C1": "challenged",
+              "K9.P1": "supported"
+            },
+            "moves_the_signal": true,
+            "needs_new_evidence": false
+          }
+        ],
+        "labels": {
+          "K9.C1": "undecided",
+          "K9.P1": "undecided"
+        },
+        "live_arguments": [
+          "K9.C1",
+          "K9.P1"
+        ],
+        "not_live": [],
+        "plain": "The two sides block each other; it is open.",
+        "rests_on": [],
+        "signal": "contested"
+      }
+    }
+  },
+  "deliberation": {
+    "actions": [
+      {
+        "id": "A1",
+        "settles": [
+          "K4"
+        ],
+        "text": "Field-check a random sample of names deleted in the Bihar SIR and publish what share were wrongly removed.",
+        "who": "the ECI with an independent body, or a court-appointed panel",
+        "why_both_sides": "Both sides say they want accurate rolls; a sample tests accuracy without redoing the revision."
+      },
+      {
+        "id": "A2",
+        "settles": [
+          "K7"
+        ],
+        "text": "Submit the named Mahadevapura entries through the sworn declaration, and release machine-readable rolls with privacy safeguards for an independent duplicate check.",
+        "who": "Congress and the ECI",
+        "why_both_sides": "The ECI asked for named entries and the opposition asked for searchable rolls; doing both lets each entry be checked."
+      },
+      {
+        "id": "A3",
+        "settles": [
+          "K6"
+        ],
+        "text": "Publish the list of what the Karnataka CID asked the ECI for on Aland, and what was handed over.",
+        "who": "the ECI and the Karnataka CID, or a court",
+        "why_both_sides": "Both say they want the Aland culprits caught; the list ends the dispute about who held what back."
+      },
+      {
+        "id": "A4",
+        "settles": [
+          "K9"
+        ],
+        "text": "Publish a log of every Model Code complaint: date, party, speaker, action taken, days taken.",
+        "who": "the ECI, with independent researchers analysing it",
+        "why_both_sides": "If enforcement is even, the log shows it; if not, it shows where."
+      },
+      {
+        "id": "A5",
+        "settles": [
+          "K11"
+        ],
+        "text": "Place the commission's minutes and the dissent notes on record.",
+        "who": "the ECI, before Parliament or a court",
+        "why_both_sides": "The ECI says its decisions were unanimous; the record would show it."
+      },
+      {
+        "id": "A6",
+        "settles": [
+          "K8"
+        ],
+        "text": "Run burnt-memory checks wherever candidates ask, and pilot a larger VVPAT sample in a few constituencies.",
+        "who": "the ECI and candidates",
+        "why_both_sides": "Cheap ways to raise confidence in the machines, whichever side doubts them."
+      },
+      {
+        "id": "A7",
+        "settles": [
+          "K2"
+        ],
+        "text": "Agree in advance to treat the Supreme Court's ruling on the 2023 Act as settling its legal side.",
+        "who": "the parties to the case",
+        "why_both_sides": "Both sides have gone to the same court; agreeing to its ruling turns a shouting match into a wait."
+      },
+      {
+        "id": "A8",
+        "settles": [
+          "K4",
+          "K7"
+        ],
+        "text": "Check your own and your family's names on the voter roll and file a correction if anything is wrong.",
+        "who": "any voter, at voters.eci.gov.in",
+        "why_both_sides": "Every voter can do this today, whichever side they are on, and every correction makes the rolls more accurate."
+      }
+    ],
+    "arguments": [
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K1.P1.e1",
+            "sources": [
+              "S01"
+            ],
+            "text": "The 2023 Act set up a three-member selection committee: the Prime Minister, a Union Cabinet Minister nominated by the Prime Minister, and the Leader of the Opposition in the Lok Sabha."
+          }
+        ],
+        "id": "K1.P1",
+        "reasoning": "The panel is the Prime Minister, a Cabinet Minister he nominates, and the Leader of the Opposition, so the government side has two votes of three.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K1",
+        "title": "Two of three panel members come from the government"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K2.P1.e1",
+            "sources": [
+              "S01"
+            ],
+            "text": "The Act replaced the arrangement set out in the Anoop Baranwal judgment, under which the Chief Justice of India sat on the panel, with a Cabinet Minister."
+          },
+          {
+            "id": "K2.P1.e2",
+            "sources": [
+              "S01"
+            ],
+            "text": "Hearing the challenge in July 2026, Justice Dipankar Datta asked: \"Election Commissioner has to be an independent person. Should there not be a show of fairness?\""
+          }
+        ],
+        "id": "K2.P1",
+        "reasoning": "Compared with the court's 2023 arrangement, which put the Chief Justice on the panel, the law swapped the only member from outside the executive and legislature for a minister, so the government can now pick commissioners on its own votes.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K2",
+        "title": "The law removed the member from outside government"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K2.C1.e1",
+            "sources": [
+              "S02"
+            ],
+            "text": "The ECI said commissioners were previously appointed by prime ministers, that since 2023 they are appointed under a law for the first time, and that \"obviously the new system is better\"."
+          },
+          {
+            "id": "K2.C1.e2",
+            "sources": [
+              "S01"
+            ],
+            "text": "The Attorney General and Solicitor General argued the Anoop Baranwal judgment was only an interim arrangement and did not limit Parliament's power under Article 324."
+          }
+        ],
+        "id": "K2.C1",
+        "reasoning": "Compared with how commissioners were chosen for decades, by the government alone, the law adds the Leader of the Opposition, so it is not less independent than before; the government argues the court's arrangement was only meant to last until Parliament made a law.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K2",
+        "title": "Before 2023 the government chose alone"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K3.P1.e1",
+            "sources": [
+              "S04",
+              "S06"
+            ],
+            "text": "About 65 lakh names were left out of the draft roll published on 1 August 2025; the Supreme Court had the ECI post the deleted names with reasons."
+          },
+          {
+            "id": "K3.P1.e2",
+            "sources": [
+              "S05",
+              "S06"
+            ],
+            "text": "The final roll of 30 September 2025 had about 7.42 crore electors, against about 7.89 crore before the revision, a net drop of about 47 lakh, after 21.53 lakh were added and 3.66 lakh more removed."
+          }
+        ],
+        "id": "K3.P1",
+        "reasoning": "The ECI's own draft and final rolls show the scale of removals.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K3",
+        "title": "65 lakh off the draft, 47 lakh fewer at the end"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K4.P1.e1",
+            "sources": [
+              "S03"
+            ],
+            "text": "Petitioners challenged the requirement that voters absent from the 2002 rolls prove a link to someone on those rolls."
+          },
+          {
+            "id": "K4.P1.e2",
+            "sources": [
+              "S04",
+              "S24"
+            ],
+            "text": "During the hearings the court had the ECI publish the deleted names with reasons and, in September 2025, accept Aadhaar as a 12th document for identity."
+          },
+          {
+            "id": "K4.P1.e3",
+            "sources": [
+              "S06"
+            ],
+            "text": "ADR's counsel told the court the deletions reflect a systemic problem and cited a person deleted in the draft who applied for inclusion but was not restored."
+          }
+        ],
+        "id": "K4.P1",
+        "reasoning": "When tens of lakhs are removed and people missing from the 2002 roll must prove links to it, some eligible voters are likely to fall out; the court itself had to add safeguards along the way.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K4",
+        "title": "The scale and the paperwork put eligible voters at risk"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+        "evidence": [
+          {
+            "id": "K4.C1.e1",
+            "sources": [
+              "S03",
+              "S17"
+            ],
+            "text": "On 27 May 2026 the Supreme Court upheld the ECI's power to conduct the SIR, including examining citizenship for inclusion on the rolls, and said it had not acted in excess of its statutory powers, with a presumption in favour of electors already on the rolls."
+          },
+          {
+            "id": "K4.C1.e2",
+            "sources": [
+              "S06"
+            ],
+            "text": "In October 2025 the ECI's counsel told the court that no deleted voter had filed an appeal or complaint with it; the court said it could not hold a roving inquiry and asked for affidavits from those aggrieved, while ADR said it could produce 100."
+          },
+          {
+            "id": "K4.C1.e3",
+            "sources": [
+              "S05"
+            ],
+            "text": "The Bihar Chief Electoral Officer's office attributed draft-stage deletions to deaths (about 22 lakh), migration or absence (about 36 lakh) and duplicates (about 7 lakh)."
+          }
+        ],
+        "id": "K4.C1",
+        "reasoning": "The Supreme Court found the SIR lawful with safeguards, the state's election office gives deaths, migration and duplicates as the reasons, and the ECI said no deleted voter had appealed.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K4",
+        "title": "The court upheld it, and the ECI says no one appealed"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K5.P1.e1",
+            "sources": [
+              "S07",
+              "S25"
+            ],
+            "text": "The Karnataka CID's SIT chargesheet names a former BJP MLA and his son as prime accused in an alleged conspiracy to file 5,994 fraudulent deletion applications between December 2022 and February 2023."
+          },
+          {
+            "id": "K5.P1.e2",
+            "sources": [
+              "S07"
+            ],
+            "text": "An ECI press release of 19 September 2025 said it received 6,018 online deletion applications for Aland, rejected 5,994 as incorrect and approved 24; the ECI filed a police complaint on 21 February 2023 after a complaint from MLA B R Patil."
+          }
+        ],
+        "id": "K5.P1",
+        "reasoning": "Police have charged named people for a paid scheme of fake deletion requests, and the ECI's figures show thousands of such requests.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K5",
+        "title": "A chargesheet and the ECI's own numbers"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K6.P1.e1",
+            "sources": [
+              "S07"
+            ],
+            "text": "Reporting on the chargesheet says the CID wrote 18 letters asking the ECI for technical data and that the ECI did not share it."
+          }
+        ],
+        "id": "K6.P1",
+        "reasoning": "If the CID asked repeatedly for technical data and did not get it, the probe was held back.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K6",
+        "title": "Investigators say their requests went unanswered"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K6.C1.e1",
+            "sources": [
+              "S08"
+            ],
+            "text": "The ECI said the case was registered by its own authority in 2023 and that it handed over all available information to the Karnataka CID."
+          }
+        ],
+        "id": "K6.C1",
+        "reasoning": "The ECI itself registered the first complaint and says it handed over all available information, which does not fit a body holding back data.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K6",
+        "title": "The ECI says it gave everything and started the case"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+        "evidence": [
+          {
+            "id": "K7.P1.e1",
+            "sources": [
+              "S09"
+            ],
+            "text": "Rahul Gandhi said a Congress research team found over one lakh fake votes in Mahadevapura out of about 6.5 lakh, in four categories: fake names, duplicates, invalid addresses and bulk additions."
+          },
+          {
+            "id": "K7.P1.e2",
+            "sources": [
+              "S23"
+            ],
+            "text": "He said Maharashtra had 9.7 crore voters against an adult population of 9.54 crore, with about 39 lakh added between the 2024 Lok Sabha and assembly polls."
+          }
+        ],
+        "id": "K7.P1",
+        "reasoning": "If one seat has over a lakh suspect entries and, on Congress's figures, a state has more voters than its projected adult population, that suggests the rolls were padded.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K7",
+        "title": "The opposition's analysis of the rolls"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K7.C1.e1",
+            "sources": [
+              "S02"
+            ],
+            "text": "EC sources said Maharashtra's electors rose 8.14% between the 2019 and 2024 assembly polls, less than Jharkhand (13.40%) or Telangana (16.16%) over their own cycles, and only 89 first appeals were filed after the rolls were finalised."
+          },
+          {
+            "id": "K7.C1.e2",
+            "sources": [
+              "S09",
+              "S10"
+            ],
+            "text": "Karnataka's Chief Electoral Officer asked Rahul Gandhi to sign a declaration under Rule 20(3)(b) naming the electors, and the CEC said he must give an affidavit within seven days or apologise, failing which the allegations would be treated as baseless."
+          }
+        ],
+        "id": "K7.C1",
+        "reasoning": "On EC figures, Maharashtra's growth was lower than in some other states, few appeals were filed, and the claims have not been submitted in the sworn form that would let officials check each name.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K7",
+        "title": "The ECI's numbers, and no sworn complaint"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K8.P1.e1",
+            "sources": [
+              "S11"
+            ],
+            "text": "ADR alleged tampering and data discrepancies and argued that VVPAT checks in only five randomly selected polling stations per constituency were insufficient."
+          }
+        ],
+        "id": "K8.P1",
+        "reasoning": "Petitioners alleged data discrepancies and argued that checking paper slips in only five polling stations per seat leaves tampering possible.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K8",
+        "title": "Checks are too thin to catch tampering"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K8.C1.e1",
+            "sources": [
+              "S11"
+            ],
+            "text": "In April 2024 the Supreme Court rejected all pleas for 100% VVPAT verification, including the suggestion to return to paper ballots, and made no finding of tampering."
+          },
+          {
+            "id": "K8.C1.e2",
+            "sources": [
+              "S11"
+            ],
+            "text": "It ordered symbol loading units sealed for 45 days and allowed the second- or third-placed candidate to request a burnt-memory check of 5% of a seat's EVMs."
+          }
+        ],
+        "id": "K8.C1",
+        "reasoning": "After questioning the ECI at length on the machines, the court dismissed the pleas and added further checks; no tampering has been shown.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K8",
+        "title": "The Supreme Court examined it and made no finding of tampering"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K9.P1.e1",
+            "sources": [
+              "S13"
+            ],
+            "text": "On complaints about the Prime Minister's April 2024 Banswara speech, the ECI sent its notice to BJP president J P Nadda; the letter did not name Modi."
+          }
+        ],
+        "id": "K9.P1",
+        "reasoning": "When the complaint was about the Prime Minister's own words, the ECI wrote to the BJP president instead, a softer step.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K9",
+        "title": "The PM's speech drew a notice to his party, not to him"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K9.C1.e1",
+            "sources": [
+              "S13"
+            ],
+            "text": "Congress president Mallikarjun Kharge received a similarly worded notice about complaints against him and Rahul Gandhi; the report says the Commission was holding party presidents responsible as a first step to rein in star campaigners."
+          },
+          {
+            "id": "K9.C1.e2",
+            "sources": [
+              "S13"
+            ],
+            "text": "Officials quoted in the report said it was the first time the Commission had taken cognisance of a complaint against any prime minister."
+          }
+        ],
+        "id": "K9.C1",
+        "reasoning": "The ECI handled complaints against Congress leaders the same way, through their party president, and it was the first time it took cognisance of a complaint against any prime minister.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K9",
+        "title": "Both parties got the same treatment"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K10.P1.e1",
+            "sources": [
+              "S14"
+            ],
+            "text": "In December 2024 Rule 93(2)(a) was amended, on the ECI's recommendation, so that only papers specified in the rules are open to public inspection, after a High Court ordered footage and documents released to a non-candidate."
+          },
+          {
+            "id": "K10.P1.e2",
+            "sources": [
+              "S15"
+            ],
+            "text": "In June 2025 the ECI cut the retention of polling video and photos to 45 days, from three months to a year, citing misuse of clips by non-contestants; footage is kept longer where an election petition is filed, and 45 days matches the window for filing one."
+          }
+        ],
+        "id": "K10.P1",
+        "reasoning": "The rule on which election papers the public may inspect was narrowed, and footage is now kept for a shorter time unless an election petition is filed.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K10",
+        "title": "A narrowed rule and a shorter retention period"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K11.P1.e1",
+            "sources": [
+              "S16",
+              "S22"
+            ],
+            "text": "The Indian Express reported that Commissioners Sukhbir Singh Sandhu and Vivek Joshi recorded objections at least 14 times over ten months, on voter additions and deletions, Form 6, and control of the roll database."
+          },
+          {
+            "id": "K11.P1.e2",
+            "sources": [
+              "S16",
+              "S17"
+            ],
+            "text": "They recorded that some decisions were issued without their knowledge, and Sandhu called a Form 6 change \"unauthorised and illegal\"."
+          }
+        ],
+        "id": "K11.P1",
+        "reasoning": "If two of three commissioners repeatedly object on record, and say some decisions were issued without their knowledge, the CEC is deciding over their objections.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K11",
+        "title": "Fourteen dissent notes on record"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K11.C1.e1",
+            "sources": [
+              "S16"
+            ],
+            "text": "The ECI said differing views are a normal part of deliberation and that its decisions over the past year were unanimous; it did not dispute that the notes exist."
+          }
+        ],
+        "id": "K11.C1",
+        "reasoning": "Differing views are normal while deciding, and the ECI says the decisions themselves were taken unanimously.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K11",
+        "title": "The ECI says its decisions were unanimous"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+        "evidence": [
+          {
+            "id": "K12.P1.e1",
+            "sources": [
+              "S18"
+            ],
+            "text": "Removal notices against the CEC signed by 130 Lok Sabha and 63 Rajya Sabha MPs were declined in April 2026; the bulletins gave no specific reasons, though the Rajya Sabha Chairman was reported to have found no prima facie case of misbehaviour."
+          },
+          {
+            "id": "K12.P1.e2",
+            "sources": [
+              "S12"
+            ],
+            "text": "A 2023 paper by Sabyasachi Das, not peer reviewed at the time, found the BJP won a disproportionate share of close 2019 contests, concentrated in BJP-ruled states."
+          }
+        ],
+        "id": "K12.P1",
+        "reasoning": "The government side holds the majority in picking commissioners, the Commission's contested decisions are the subject of formal removal notices that were declined, and a study found close-seat anomalies favouring the ruling party; critics read these together as a shared aim, though none of them shows coordination directly.",
+        "role": "case",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K12",
+        "title": "The pieces point one way"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+        "evidence": [
+          {
+            "id": "K12.C1.e1",
+            "sources": [
+              "S19"
+            ],
+            "text": "In the 2024 Lok Sabha election the BJP won 240 seats, short of the 272 majority mark; the NDA won 293 and formed the government."
+          },
+          {
+            "id": "K12.C1.e2",
+            "sources": [
+              "S20",
+              "S21"
+            ],
+            "text": "In May 2026 Vijay's TVK became the largest party in Tamil Nadu with 108 seats and the BJP won 1, and Congress won Kerala; in the same round the BJP swept West Bengal and retained Assam."
+          }
+        ],
+        "id": "K12.C1",
+        "reasoning": "If the referee and government were tilting elections together, the ruling party would be unlikely to lose its own majority in 2024 and lose states like Tamil Nadu and Kerala under the same Commission, even as it won others.",
+        "role": "case",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K12",
+        "title": "The ruling party still loses majorities and states"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K12.O1.e1",
+            "sources": [
+              "S03"
+            ],
+            "text": "The Supreme Court upheld the SIR as within the ECI's powers."
+          },
+          {
+            "id": "K12.O1.e2",
+            "sources": [
+              "S12"
+            ],
+            "text": "The Das paper states that it does not provide 'proofs of fraud'; Scroll describes it as a probabilistic exercise."
+          }
+        ],
+        "id": "K12.O1",
+        "reasoning": "Each decision has its own stated legal reason, the biggest one was upheld by the Supreme Court, and the study's author says it is not proof; a run of contested decisions does not show that two bodies agreed on an aim.",
+        "role": "objection",
+        "stance": "challenges",
+        "status": "cross_checked",
+        "sub_claim": "K12",
+        "title": "A pattern is not a plan"
+      },
+      {
+        "check_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+        "evidence": [
+          {
+            "id": "K12.O2.e1",
+            "sources": [
+              "S12"
+            ],
+            "text": "The Das paper's anomaly was specific to closely fought seats."
+          }
+        ],
+        "id": "K12.O2",
+        "reasoning": "Unfairness at the margins would show up in close seats, not in landslides, so big opposition wins do not show the process is fair.",
+        "role": "objection",
+        "stance": "supports",
+        "status": "cross_checked",
+        "sub_claim": "K12",
+        "title": "Losing some races does not rule out tilting close ones"
+      }
+    ],
+    "as_of": "2026-10-18",
+    "attacks": [
+      {
+        "id": "X2a",
+        "note": "the two compare against different starting points",
+        "source": "K2.C1",
+        "target": "K2.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X2b",
+        "note": "the two compare against different starting points",
+        "source": "K2.P1",
+        "target": "K2.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X4a",
+        "note": "lawful with safeguards and few appeals, against scale and burden",
+        "source": "K4.C1",
+        "target": "K4.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X4b",
+        "note": "a lawful process can still drop eligible people; few appeals may reflect the burden of appealing",
+        "source": "K4.P1",
+        "target": "K4.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X6a",
+        "note": "the two accounts of the same correspondence conflict",
+        "source": "K6.C1",
+        "target": "K6.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X6b",
+        "note": "the two accounts of the same correspondence conflict",
+        "source": "K6.P1",
+        "target": "K6.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X7a",
+        "note": "official totals and the missing sworn complaint, against a party's own entry-level analysis",
+        "source": "K7.C1",
+        "target": "K7.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X7b",
+        "note": "state-level growth rates do not test whether particular entries are fake",
+        "source": "K7.P1",
+        "target": "K7.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X8a",
+        "note": "the court examined the safeguards and found no shown instance",
+        "source": "K8.C1",
+        "target": "K8.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X8b",
+        "note": "a small sample can miss tampering",
+        "source": "K8.P1",
+        "target": "K8.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X9a",
+        "note": "the same procedure was applied to both parties",
+        "source": "K9.C1",
+        "target": "K9.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X9b",
+        "note": "one procedural parallel does not show equal enforcement overall",
+        "source": "K9.P1",
+        "target": "K9.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X11a",
+        "note": "the two accounts conflict",
+        "source": "K11.C1",
+        "target": "K11.P1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X11b",
+        "note": "the ECI did not dispute that the notes exist",
+        "source": "K11.P1",
+        "target": "K11.C1",
+        "target_evidence": null,
+        "type": "rebut"
+      },
+      {
+        "id": "X12a",
+        "note": "the step from many separate decisions to one shared aim is not shown",
+        "source": "K12.O1",
+        "target": "K12.P1",
+        "target_evidence": null,
+        "type": "undercut"
+      },
+      {
+        "id": "X12b",
+        "note": "the step from big opposition wins to a fair process is not shown",
+        "source": "K12.O2",
+        "target": "K12.C1",
+        "target_evidence": null,
+        "type": "undercut"
+      }
+    ],
+    "based_on": null,
+    "generation": {
+      "created_at": "2026-10-18T01:30:00+00:00",
+      "cross_checker": "a second, independent Claude agent that opened every cited source",
+      "generator": "claude (deliberate skill)"
+    },
+    "id": "cec-government-elections",
+    "preferences": [
+      {
+        "id": "PR8",
+        "over": "K8.P1",
+        "preferred": "K8.C1",
+        "rationale": "A Supreme Court bench questioned the ECI at length on the machines and safeguards and made no finding of tampering; the petition argued that checks were too few, which is a case for more checking, not evidence that tampering happened."
+      }
+    ],
+    "priorities": [
+      {
+        "emphasised_by": "critics of the 2023 law, echoed from the bench in July 2026",
+        "id": "V1",
+        "text": "The referee must be seen to be independent, not only be independent."
+      },
+      {
+        "emphasised_by": "the Union government",
+        "id": "V2",
+        "text": "An elected Parliament makes the law on appointments, and constitutional offices should not be presumed to act in bad faith."
+      },
+      {
+        "emphasised_by": "the ECI",
+        "id": "V3",
+        "text": "Clean rolls: no dead, shifted, duplicate or ineligible names."
+      },
+      {
+        "emphasised_by": "petitioners and opposition parties",
+        "id": "V4",
+        "text": "No eligible voter left off, and the burden of proof on the state rather than the voter."
+      },
+      {
+        "emphasised_by": "RTI activists and opposition parties",
+        "id": "V5",
+        "text": "Election records open enough that anyone can check them."
+      },
+      {
+        "emphasised_by": "the ECI",
+        "id": "V6",
+        "text": "Voter privacy, and stopping selective clips being used to mislead."
+      },
+      {
+        "emphasised_by": "Justice Datta, in the 2024 VVPAT judgment",
+        "id": "V7",
+        "text": "Trust in a working system, without unwarranted suspicion."
+      }
+    ],
+    "question": {
+      "original": "CEC and modi government, together are trying to rig Indian democracy",
+      "plain": "Are the Chief Election Commissioner and the Union government working together to make India's elections unfair?",
+      "reframe_note": "\"Rig\" is replaced with \"make elections unfair\" so the question reads the same to both sides. The claim is then split into parts that can each be checked: how the referee is appointed, what happened to voter rolls, voting machines, rule enforcement, transparency, how the Commission works inside, and finally intent."
+    },
+    "sources": [
+      {
+        "date": "2026-07-30",
+        "id": "S01",
+        "kind": "news",
+        "publisher": "Deccan Herald",
+        "title": "Should there not be a show of fairness? SC questions exclusion of CJI from CEC, ECs appointment panel",
+        "url": "https://www.deccanherald.com/amp/story/india/should-there-not-be-a-show-of-fairness-sc-questions-exclusion-of-cji-from-cec-ecs-appointment-panel-4093352"
+      },
+      {
+        "date": "2025-06-08",
+        "id": "S02",
+        "kind": "news",
+        "publisher": "The Tribune",
+        "title": "EC rejects Maha election rigging charge as absurd; don't evade, counters Rahul",
+        "url": "https://www.tribuneindia.com/news/india/ec-rejects-maha-election-rigging-charge-as-absurd-dont-evade-counters-rahul/amp/?utm=relatedarticles"
+      },
+      {
+        "date": "2026-05-27",
+        "id": "S03",
+        "kind": "news",
+        "publisher": "The News Minute",
+        "title": "Supreme Court upholds validity of SIR, says ECI can examine citizenship",
+        "url": "https://www.thenewsminute.com/india/supreme-court-upholds-validity-of-sir-says-eci-can-examine-citizenship"
+      },
+      {
+        "date": "2025-08-17",
+        "id": "S04",
+        "kind": "news",
+        "publisher": "The Tribune (PTI)",
+        "title": "Names of 65 lakh voters deleted from Bihar SIR posted on district websites",
+        "url": "https://www.tribuneindia.com/news/india/names-of-65-lakh-voters-deleted-from-bihar-sir-posted-on-district-websites/amp"
+      },
+      {
+        "date": "2025-10-01",
+        "id": "S05",
+        "kind": "news",
+        "publisher": "SabrangIndia",
+        "title": "Bihar SIR final voter list sees 47 lakh names removed, total electorate drops to 7.42 crore",
+        "url": "https://sabrangindia.in/bihar-sir-final-voter-list-sees-47-lakh-names-removed-total-electorate-drops-to-7-42-crore"
+      },
+      {
+        "date": "2025-10-07",
+        "id": "S06",
+        "kind": "news",
+        "publisher": "ETV Bharat",
+        "title": "'Can't have a roving inquiry, those aggrieved should file affidavits': SC on Bihar SIR",
+        "url": "https://www.etvbharat.com/en/!bharat/cant-have-a-roving-inquiry-those-aggrieved-should-file-affidavits-sc-on-bihar-sir-enn25100705353"
+      },
+      {
+        "date": "2025-12-13",
+        "id": "S07",
+        "kind": "news",
+        "publisher": "The News Minute",
+        "title": "Aland vote fraud: Ex BJP MLA and son prime accused in chargesheet",
+        "url": "https://www.thenewsminute.com/karnataka/aland-vote-fraud-ex-bjp-mla-and-son-prime-accused-in-chargesheet"
+      },
+      {
+        "date": "2025-09-19",
+        "id": "S08",
+        "kind": "news",
+        "publisher": "Deccan Herald",
+        "title": "EC hits back at Rahul Gandhi, says nothing withheld in Aland fake voter deletion probe",
+        "url": "https://www.deccanherald.com/india/ec-hits-back-at-rahul-gandhi-says-nothing-withheld-in-aland-fake-voter-deletion-probe-3736331"
+      },
+      {
+        "date": "2025-08-07",
+        "id": "S09",
+        "kind": "news",
+        "publisher": "Business Today",
+        "title": "'Over 1L votes stolen in Mahadevapura assembly': Rahul Gandhi's big claim against EC, poll body responds",
+        "url": "https://www.businesstoday.in/amp/india/story/over-1l-votes-stolen-in-mahadevapura-assembly-rahul-gandhis-big-claim-against-ec-poll-body-responds-488311-2025-08-07"
+      },
+      {
+        "date": "2025-08-18",
+        "id": "S10",
+        "kind": "news",
+        "publisher": "The Sentinel",
+        "title": "Give affidavit or apologise, no third option: CEC to Rahul Gandhi",
+        "url": "https://www.sentinelassam.com/topheadlines/give-affidavit-or-apologise-no-third-option-cec-to-rahul-gandhi"
+      },
+      {
+        "date": "2024-04-26",
+        "id": "S11",
+        "kind": "court",
+        "publisher": "Supreme Court Observer",
+        "title": "Supreme Court rejects plea seeking 100% vote verification with VVPATs",
+        "url": "https://www.scobserver.in/reports/supreme-court-rejects-plea-seeking-100-vote-verification-with-vvpats/"
+      },
+      {
+        "date": "2023-08-14",
+        "id": "S12",
+        "kind": "research",
+        "publisher": "Scroll",
+        "title": "A new research paper argues manipulation in 2019 polls. What does this mean for the EC?",
+        "url": "https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec"
+      },
+      {
+        "date": "2024-04-25",
+        "id": "S13",
+        "kind": "news",
+        "publisher": "Onmanorama",
+        "title": "EC notice to BJP, Congress over poll code violation plaints against Modi, Rahul Gandhi",
+        "url": "https://www.onmanorama.com/news/india/2024/04/25/election-commission-sends-notice-to-congress-bjp-over-hate-speech.amp.html"
+      },
+      {
+        "date": "2024-12-23",
+        "id": "S14",
+        "kind": "news",
+        "publisher": "MediaNama",
+        "title": "Centre amends election rule to restrict access to electronic and CCTV records",
+        "url": "https://www.medianama.com/2024/12/223-centre-amends-election-rule-to-restrict-access-to-electronic-and-cctv-records/"
+      },
+      {
+        "date": "2025-06-20",
+        "id": "S15",
+        "kind": "news",
+        "publisher": "Scroll",
+        "title": "Citing 'misuse', EC cuts storage time of polling videos, photos to 45 days",
+        "url": "https://scroll.in/latest/1083683/citing-misuse-ec-cuts-storage-time-of-polling-videos-photos-to-45-days"
+      },
+      {
+        "date": "2026-10-09",
+        "id": "S16",
+        "kind": "news",
+        "publisher": "The News Minute (Newslaundry)",
+        "title": "From 'get lost' to dissent within ECI: Questions mount over Gyanesh Kumar's leadership",
+        "url": "https://www.thenewsminute.com/news/a-one-man-election-commission-inside-the-allegations-against-cec-gyanesh-kumar"
+      },
+      {
+        "date": "2026-09-23",
+        "id": "S17",
+        "kind": "news",
+        "publisher": "Outlook",
+        "title": "SIR to removal bid: Why Gyanesh Kumar's ECI tenure has faced repeated scrutiny",
+        "url": "https://www.outlookindia.com/national/sir-to-removal-bid-why-gyanesh-kumars-eci-tenure-has-faced-repeated-scrutiny"
+      },
+      {
+        "date": "2026-04-07",
+        "id": "S18",
+        "kind": "news",
+        "publisher": "Scroll",
+        "title": "Opposition notice to remove chief election commissioner rejected by Rajya Sabha chairman, LS speaker",
+        "url": "https://scroll.in/latest/1091926/opposition-notice-to-remove-chief-election-commissioner-rejected-by-rajya-sabha-chairman-ls-speaker"
+      },
+      {
+        "date": "2024-06-05",
+        "id": "S19",
+        "kind": "news",
+        "publisher": "ETV Bharat",
+        "title": "Lok Sabha Election 2024 final result: NDA set for third term with 293 seats; INDIA bloc at 232",
+        "url": "https://www.etvbharat.com/en/!bharat/results-for-all-lok-sabha-constituencies-declared-bjp-congress-election-commission-enn24060500653"
+      },
+      {
+        "date": "2026-05-04",
+        "id": "S20",
+        "kind": "news",
+        "publisher": "Scroll",
+        "title": "Tamil Nadu election results: Vijay's TVK emerges as single-largest party, short of majority",
+        "url": "https://scroll.in/latest/1092557/tamil-nadu-assembly-election-results-counting-of-votes-to-begin-at-8-am"
+      },
+      {
+        "date": "2026-05-05",
+        "id": "S21",
+        "kind": "news",
+        "publisher": "Moneylife",
+        "title": "3 CMs out, new power centres rise: BJP sweeps Bengal, retains Assam, Congress finds solace in Kerala",
+        "url": "https://moneylife.in/article/3-cms-out-new-power-centres-rise-bjp-sweeps-bengal-retains-assam-congress-finds-solace-in-kerala/80377.html"
+      },
+      {
+        "date": "2026-09",
+        "id": "S22",
+        "kind": "news",
+        "publisher": "Moneylife",
+        "title": "2 Election Commissioners raise 14 objections over voter rolls, Form 6 and IT controls; ECI says decisions were unanimous",
+        "url": "https://www.moneylife.in/article/2-election-commissioners-raise-14-objections-over-voter-rolls-form-6-and-it-controls-eci-says-decisions-were-unanimous/81733.html"
+      },
+      {
+        "date": "2025-02-07",
+        "id": "S23",
+        "kind": "news",
+        "publisher": "Business Standard",
+        "title": "Rahul Gandhi's Maharashtra voters-population claim; Election Commission says it will reply",
+        "url": "https://www.business-standard.com/india-news/rahul-gandhi-maharashtra-voters-population-claim-election-commission-reply-125020700833_1.html"
+      },
+      {
+        "date": "2025-09-08",
+        "id": "S24",
+        "kind": "news",
+        "publisher": "LiveLaw",
+        "title": "Supreme Court directs ECI to accept Aadhaar card as '12th document' in Bihar SIR as proof of identity",
+        "url": "https://www.livelaw.in/amp/top-stories/supreme-court-directs-eci-to-accept-aadhaar-card-as-12th-document-in-bihar-sir-as-proof-of-identity-303182"
+      },
+      {
+        "date": "2025-12-13",
+        "id": "S25",
+        "kind": "news",
+        "publisher": "Business Standard",
+        "title": "Karnataka vote theft case: SIT names ex-BJP MLA, son in chargesheet",
+        "url": "https://www.business-standard.com/india-news/karnataka-vote-theft-case-sit-names-ex-bjp-mla-son-in-chargesheet-125121300207_1.html"
+      }
+    ],
+    "sub_claims": [
+      {
+        "id": "K1",
+        "kind": "fact",
+        "merged_from": [
+          "The government picks its own referee"
+        ],
+        "settle_by": "Already settled by the text of the 2023 Act.",
+        "text": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
+      },
+      {
+        "id": "K2",
+        "kind": "interpretation",
+        "merged_from": [],
+        "settle_by": "The Supreme Court's ruling on the 2023 Act, which is still pending; and agreeing which 'before' to compare with.",
+        "text": "The 2023 law made the Election Commission less independent than before."
+      },
+      {
+        "id": "K3",
+        "kind": "fact",
+        "merged_from": [],
+        "settle_by": "Already settled by the ECI's own published rolls.",
+        "text": "Bihar's 2025 roll revision (SIR) removed tens of lakhs of names."
+      },
+      {
+        "id": "K4",
+        "kind": "interpretation",
+        "merged_from": [
+          "SIR is mass disenfranchisement"
+        ],
+        "settle_by": "A field check of a random sample of deleted names, showing what share were wrongly removed.",
+        "text": "The Bihar SIR left out many eligible voters."
+      },
+      {
+        "id": "K5",
+        "kind": "fact",
+        "merged_from": [],
+        "settle_by": "Already settled by the police chargesheet and the ECI's own figures; the trial will settle who is guilty.",
+        "text": "There was an organised attempt to fraudulently delete voters in Aland, Karnataka."
+      },
+      {
+        "id": "K6",
+        "kind": "interpretation",
+        "merged_from": [
+          "The ECI is shielding vote thieves"
+        ],
+        "settle_by": "The list of what the Karnataka CID asked for and what the ECI handed over, made public or placed before a court.",
+        "text": "The ECI held back data that investigators needed in the Aland case."
+      },
+      {
+        "id": "K7",
+        "kind": "interpretation",
+        "merged_from": [
+          "Vote chori"
+        ],
+        "settle_by": "The named entries submitted under the statutory declaration and checked one by one, plus an independent duplicate check of machine-readable rolls.",
+        "text": "Voter rolls in Mahadevapura and Maharashtra were padded with fake or duplicate entries."
+      },
+      {
+        "id": "K8",
+        "kind": "interpretation",
+        "merged_from": [
+          "EVMs are hacked"
+        ],
+        "settle_by": "Burnt-memory checks run where candidates request them, and a larger VVPAT sample in a pilot.",
+        "text": "Voting machines (EVMs) have been tampered with to change results."
+      },
+      {
+        "id": "K9",
+        "kind": "interpretation",
+        "merged_from": [],
+        "settle_by": "A full log of Model Code complaints, with party, action taken, and days taken, analysed independently.",
+        "text": "The ECI enforces the Model Code of Conduct more softly against the ruling party."
+      },
+      {
+        "id": "K10",
+        "kind": "fact",
+        "merged_from": [],
+        "settle_by": "Already settled by the amended rule and the ECI's retention notice; whether it was justified is a question of values.",
+        "text": "Since late 2024, public access to election records and polling footage has been narrowed."
+      },
+      {
+        "id": "K11",
+        "kind": "interpretation",
+        "merged_from": [
+          "One-man Election Commission"
+        ],
+        "settle_by": "The commission's minutes and the dissent notes, placed before Parliament or a court.",
+        "text": "Inside the ECI, the Chief Election Commissioner has taken decisions over the objections of the other two commissioners."
+      },
+      {
+        "id": "K12",
+        "kind": "intent",
+        "merged_from": [
+          "CEC and modi government, together are trying to rig Indian democracy"
+        ],
+        "settle_by": "Direct evidence of coordination, which is not public. Patterns alone cannot settle intent; the parts above, once settled, would narrow it.",
+        "text": "The CEC and the Union government are acting together to tilt elections toward the ruling party."
+      }
+    ],
+    "version": 1
+  },
+  "engine": {
+    "argkit": "5e0194b00533",
+    "build": "deterministic; no model call at build time",
+    "dcore": "0.1.0",
+    "semantics": "grounded"
+  },
+  "graphs": {
+    "K1": {
+      "arguments": [
+        {
+          "argument_id": "K1.P1",
+          "conclusion_id": "K1",
+          "inference_id": "K1.P1.inference",
+          "premise_ids": [
+            "K1.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "Two of three panel members come from the government"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
+        },
+        {
+          "node_id": "K1.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
+        }
+      ],
+      "conflicts": [],
+      "evidence": [
+        {
+          "node_id": "K1.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Deccan Herald, Should there not be a show of fairness? SC questions exclusion of CJI from CEC, ECs appointment panel (2026-07-30) https://www.deccanherald.com/amp/story/india/should-there-not-be-a-show-of-fairness-sc-questions-exclusion-of-cji-from-cec-ecs-appointment-panel-4093352",
+            "status": "candidate"
+          },
+          "text": "The 2023 Act set up a three-member selection committee: the Prime Minister, a Union Cabinet Minister nominated by the Prime Minister, and the Leader of the Opposition in the Lok Sabha."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K1",
+          "node_id": "K1.P1.inference",
+          "premise_ids": [
+            "K1.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The panel is the Prime Minister, a Cabinet Minister he nominates, and the Leader of the Opposition, so the government side has two votes of three."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K1",
+      "title": "Under the 2023 law, the government side holds a majority on the panel that picks Election Commissioners."
+    },
+    "K10": {
+      "arguments": [
+        {
+          "argument_id": "K10.P1",
+          "conclusion_id": "K10",
+          "inference_id": "K10.P1.inference",
+          "premise_ids": [
+            "K10.P1.e1",
+            "K10.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "A narrowed rule and a shorter retention period"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K10",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Since late 2024, public access to election records and polling footage has been narrowed."
+        },
+        {
+          "node_id": "K10.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Since late 2024, public access to election records and polling footage has been narrowed."
+        }
+      ],
+      "conflicts": [],
+      "evidence": [
+        {
+          "node_id": "K10.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "MediaNama, Centre amends election rule to restrict access to electronic and CCTV records (2024-12-23) https://www.medianama.com/2024/12/223-centre-amends-election-rule-to-restrict-access-to-electronic-and-cctv-records/",
+            "status": "candidate"
+          },
+          "text": "In December 2024 Rule 93(2)(a) was amended, on the ECI's recommendation, so that only papers specified in the rules are open to public inspection, after a High Court ordered footage and documents released to a non-candidate."
+        },
+        {
+          "node_id": "K10.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, Citing 'misuse', EC cuts storage time of polling videos, photos to 45 days (2025-06-20) https://scroll.in/latest/1083683/citing-misuse-ec-cuts-storage-time-of-polling-videos-photos-to-45-days",
+            "status": "candidate"
+          },
+          "text": "In June 2025 the ECI cut the retention of polling video and photos to 45 days, from three months to a year, citing misuse of clips by non-contestants; footage is kept longer where an election petition is filed, and 45 days matches the window for filing one."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K10",
+          "node_id": "K10.P1.inference",
+          "premise_ids": [
+            "K10.P1.e1",
+            "K10.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The rule on which election papers the public may inspect was narrowed, and footage is now kept for a shorter time unless an election petition is filed."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K10",
+      "title": "Since late 2024, public access to election records and polling footage has been narrowed."
+    },
+    "K11": {
+      "arguments": [
+        {
+          "argument_id": "K11.P1",
+          "conclusion_id": "K11",
+          "inference_id": "K11.P1.inference",
+          "premise_ids": [
+            "K11.P1.e1",
+            "K11.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "Fourteen dissent notes on record"
+        },
+        {
+          "argument_id": "K11.C1",
+          "conclusion_id": "K11.not",
+          "inference_id": "K11.C1.inference",
+          "premise_ids": [
+            "K11.C1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The ECI says its decisions were unanimous"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K11",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Inside the ECI, the Chief Election Commissioner has taken decisions over the objections of the other two commissioners."
+        },
+        {
+          "node_id": "K11.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Inside the ECI, the Chief Election Commissioner has taken decisions over the objections of the other two commissioners."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X11a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K11.C1",
+          "target_argument_id": "K11.P1",
+          "target_node_id": "K11"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X11b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K11.P1",
+          "target_argument_id": "K11.C1",
+          "target_node_id": "K11.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K11.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute (Newslaundry), From 'get lost' to dissent within ECI: Questions mount over Gyanesh Kumar's leadership (2026-10-09) https://www.thenewsminute.com/news/a-one-man-election-commission-inside-the-allegations-against-cec-gyanesh-kumar; Moneylife, 2 Election Commissioners raise 14 objections over voter rolls, Form 6 and IT controls; ECI says decisions were unanimous (2026-09) https://www.moneylife.in/article/2-election-commissioners-raise-14-objections-over-voter-rolls-form-6-and-it-controls-eci-says-decisions-were-unanimous/81733.html",
+            "status": "candidate"
+          },
+          "text": "The Indian Express reported that Commissioners Sukhbir Singh Sandhu and Vivek Joshi recorded objections at least 14 times over ten months, on voter additions and deletions, Form 6, and control of the roll database."
+        },
+        {
+          "node_id": "K11.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute (Newslaundry), From 'get lost' to dissent within ECI: Questions mount over Gyanesh Kumar's leadership (2026-10-09) https://www.thenewsminute.com/news/a-one-man-election-commission-inside-the-allegations-against-cec-gyanesh-kumar; Outlook, SIR to removal bid: Why Gyanesh Kumar's ECI tenure has faced repeated scrutiny (2026-09-23) https://www.outlookindia.com/national/sir-to-removal-bid-why-gyanesh-kumars-eci-tenure-has-faced-repeated-scrutiny",
+            "status": "candidate"
+          },
+          "text": "They recorded that some decisions were issued without their knowledge, and Sandhu called a Form 6 change \"unauthorised and illegal\"."
+        },
+        {
+          "node_id": "K11.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute (Newslaundry), From 'get lost' to dissent within ECI: Questions mount over Gyanesh Kumar's leadership (2026-10-09) https://www.thenewsminute.com/news/a-one-man-election-commission-inside-the-allegations-against-cec-gyanesh-kumar",
+            "status": "candidate"
+          },
+          "text": "The ECI said differing views are a normal part of deliberation and that its decisions over the past year were unanimous; it did not dispute that the notes exist."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K11",
+          "node_id": "K11.P1.inference",
+          "premise_ids": [
+            "K11.P1.e1",
+            "K11.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "If two of three commissioners repeatedly object on record, and say some decisions were issued without their knowledge, the CEC is deciding over their objections."
+        },
+        {
+          "conclusion_id": "K11.not",
+          "node_id": "K11.C1.inference",
+          "premise_ids": [
+            "K11.C1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Differing views are normal while deciding, and the ECI says the decisions themselves were taken unanimously."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K11",
+      "title": "Inside the ECI, the Chief Election Commissioner has taken decisions over the objections of the other two commissioners."
+    },
+    "K12": {
+      "arguments": [
+        {
+          "argument_id": "K12.P1",
+          "conclusion_id": "K12",
+          "inference_id": "K12.P1.inference",
+          "premise_ids": [
+            "K12.P1.e1",
+            "K12.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "The pieces point one way"
+        },
+        {
+          "argument_id": "K12.C1",
+          "conclusion_id": "K12.not",
+          "inference_id": "K12.C1.inference",
+          "premise_ids": [
+            "K12.C1.e1",
+            "K12.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The ruling party still loses majorities and states"
+        },
+        {
+          "argument_id": "K12.O1",
+          "conclusion_id": "K12.not",
+          "inference_id": "K12.O1.inference",
+          "premise_ids": [
+            "K12.O1.e1",
+            "K12.O1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "A pattern is not a plan"
+        },
+        {
+          "argument_id": "K12.O2",
+          "conclusion_id": "K12",
+          "inference_id": "K12.O2.inference",
+          "premise_ids": [
+            "K12.O2.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "Losing some races does not rule out tilting close ones"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K12",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The CEC and the Union government are acting together to tilt elections toward the ruling party."
+        },
+        {
+          "node_id": "K12.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: The CEC and the Union government are acting together to tilt elections toward the ruling party."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "undercut",
+          "conflict_id": "X12a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K12.O1",
+          "target_argument_id": "K12.P1",
+          "target_node_id": "K12.P1.inference"
+        },
+        {
+          "attack_type": "undercut",
+          "conflict_id": "X12b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K12.O2",
+          "target_argument_id": "K12.C1",
+          "target_node_id": "K12.C1.inference"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K12.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, Opposition notice to remove chief election commissioner rejected by Rajya Sabha chairman, LS speaker (2026-04-07) https://scroll.in/latest/1091926/opposition-notice-to-remove-chief-election-commissioner-rejected-by-rajya-sabha-chairman-ls-speaker",
+            "status": "candidate"
+          },
+          "text": "Removal notices against the CEC signed by 130 Lok Sabha and 63 Rajya Sabha MPs were declined in April 2026; the bulletins gave no specific reasons, though the Rajya Sabha Chairman was reported to have found no prima facie case of misbehaviour."
+        },
+        {
+          "node_id": "K12.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, A new research paper argues manipulation in 2019 polls. What does this mean for the EC? (2023-08-14) https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec",
+            "status": "candidate"
+          },
+          "text": "A 2023 paper by Sabyasachi Das, not peer reviewed at the time, found the BJP won a disproportionate share of close 2019 contests, concentrated in BJP-ruled states."
+        },
+        {
+          "node_id": "K12.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "ETV Bharat, Lok Sabha Election 2024 final result: NDA set for third term with 293 seats; INDIA bloc at 232 (2024-06-05) https://www.etvbharat.com/en/!bharat/results-for-all-lok-sabha-constituencies-declared-bjp-congress-election-commission-enn24060500653",
+            "status": "candidate"
+          },
+          "text": "In the 2024 Lok Sabha election the BJP won 240 seats, short of the 272 majority mark; the NDA won 293 and formed the government."
+        },
+        {
+          "node_id": "K12.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, Tamil Nadu election results: Vijay's TVK emerges as single-largest party, short of majority (2026-05-04) https://scroll.in/latest/1092557/tamil-nadu-assembly-election-results-counting-of-votes-to-begin-at-8-am; Moneylife, 3 CMs out, new power centres rise: BJP sweeps Bengal, retains Assam, Congress finds solace in Kerala (2026-05-05) https://moneylife.in/article/3-cms-out-new-power-centres-rise-bjp-sweeps-bengal-retains-assam-congress-finds-solace-in-kerala/80377.html",
+            "status": "candidate"
+          },
+          "text": "In May 2026 Vijay's TVK became the largest party in Tamil Nadu with 108 seats and the BJP won 1, and Congress won Kerala; in the same round the BJP swept West Bengal and retained Assam."
+        },
+        {
+          "node_id": "K12.O1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Supreme Court upholds validity of SIR, says ECI can examine citizenship (2026-05-27) https://www.thenewsminute.com/india/supreme-court-upholds-validity-of-sir-says-eci-can-examine-citizenship",
+            "status": "candidate"
+          },
+          "text": "The Supreme Court upheld the SIR as within the ECI's powers."
+        },
+        {
+          "node_id": "K12.O1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, A new research paper argues manipulation in 2019 polls. What does this mean for the EC? (2023-08-14) https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec",
+            "status": "candidate"
+          },
+          "text": "The Das paper states that it does not provide 'proofs of fraud'; Scroll describes it as a probabilistic exercise."
+        },
+        {
+          "node_id": "K12.O2.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Scroll, A new research paper argues manipulation in 2019 polls. What does this mean for the EC? (2023-08-14) https://scroll.in/article/1054262/a-new-research-paper-argues-manipulation-in-2019-polls-what-does-this-mean-for-the-ec",
+            "status": "candidate"
+          },
+          "text": "The Das paper's anomaly was specific to closely fought seats."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K12",
+          "node_id": "K12.P1.inference",
+          "premise_ids": [
+            "K12.P1.e1",
+            "K12.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The government side holds the majority in picking commissioners, the Commission's contested decisions are the subject of formal removal notices that were declined, and a study found close-seat anomalies favouring the ruling party; critics read these together as a shared aim, though none of them shows coordination directly."
+        },
+        {
+          "conclusion_id": "K12.not",
+          "node_id": "K12.C1.inference",
+          "premise_ids": [
+            "K12.C1.e1",
+            "K12.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "If the referee and government were tilting elections together, the ruling party would be unlikely to lose its own majority in 2024 and lose states like Tamil Nadu and Kerala under the same Commission, even as it won others."
+        },
+        {
+          "conclusion_id": "K12.not",
+          "node_id": "K12.O1.inference",
+          "premise_ids": [
+            "K12.O1.e1",
+            "K12.O1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Each decision has its own stated legal reason, the biggest one was upheld by the Supreme Court, and the study's author says it is not proof; a run of contested decisions does not show that two bodies agreed on an aim."
+        },
+        {
+          "conclusion_id": "K12",
+          "node_id": "K12.O2.inference",
+          "premise_ids": [
+            "K12.O2.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Unfairness at the margins would show up in close seats, not in landslides, so big opposition wins do not show the process is fair."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K12",
+      "title": "The CEC and the Union government are acting together to tilt elections toward the ruling party."
+    },
+    "K2": {
+      "arguments": [
+        {
+          "argument_id": "K2.P1",
+          "conclusion_id": "K2",
+          "inference_id": "K2.P1.inference",
+          "premise_ids": [
+            "K2.P1.e1",
+            "K2.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "The law removed the member from outside government"
+        },
+        {
+          "argument_id": "K2.C1",
+          "conclusion_id": "K2.not",
+          "inference_id": "K2.C1.inference",
+          "premise_ids": [
+            "K2.C1.e1",
+            "K2.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "Before 2023 the government chose alone"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The 2023 law made the Election Commission less independent than before."
+        },
+        {
+          "node_id": "K2.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: The 2023 law made the Election Commission less independent than before."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X2a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K2.C1",
+          "target_argument_id": "K2.P1",
+          "target_node_id": "K2"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X2b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K2.P1",
+          "target_argument_id": "K2.C1",
+          "target_node_id": "K2.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K2.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Deccan Herald, Should there not be a show of fairness? SC questions exclusion of CJI from CEC, ECs appointment panel (2026-07-30) https://www.deccanherald.com/amp/story/india/should-there-not-be-a-show-of-fairness-sc-questions-exclusion-of-cji-from-cec-ecs-appointment-panel-4093352",
+            "status": "candidate"
+          },
+          "text": "The Act replaced the arrangement set out in the Anoop Baranwal judgment, under which the Chief Justice of India sat on the panel, with a Cabinet Minister."
+        },
+        {
+          "node_id": "K2.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Deccan Herald, Should there not be a show of fairness? SC questions exclusion of CJI from CEC, ECs appointment panel (2026-07-30) https://www.deccanherald.com/amp/story/india/should-there-not-be-a-show-of-fairness-sc-questions-exclusion-of-cji-from-cec-ecs-appointment-panel-4093352",
+            "status": "candidate"
+          },
+          "text": "Hearing the challenge in July 2026, Justice Dipankar Datta asked: \"Election Commissioner has to be an independent person. Should there not be a show of fairness?\""
+        },
+        {
+          "node_id": "K2.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The Tribune, EC rejects Maha election rigging charge as absurd; don't evade, counters Rahul (2025-06-08) https://www.tribuneindia.com/news/india/ec-rejects-maha-election-rigging-charge-as-absurd-dont-evade-counters-rahul/amp/?utm=relatedarticles",
+            "status": "candidate"
+          },
+          "text": "The ECI said commissioners were previously appointed by prime ministers, that since 2023 they are appointed under a law for the first time, and that \"obviously the new system is better\"."
+        },
+        {
+          "node_id": "K2.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Deccan Herald, Should there not be a show of fairness? SC questions exclusion of CJI from CEC, ECs appointment panel (2026-07-30) https://www.deccanherald.com/amp/story/india/should-there-not-be-a-show-of-fairness-sc-questions-exclusion-of-cji-from-cec-ecs-appointment-panel-4093352",
+            "status": "candidate"
+          },
+          "text": "The Attorney General and Solicitor General argued the Anoop Baranwal judgment was only an interim arrangement and did not limit Parliament's power under Article 324."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K2",
+          "node_id": "K2.P1.inference",
+          "premise_ids": [
+            "K2.P1.e1",
+            "K2.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Compared with the court's 2023 arrangement, which put the Chief Justice on the panel, the law swapped the only member from outside the executive and legislature for a minister, so the government can now pick commissioners on its own votes."
+        },
+        {
+          "conclusion_id": "K2.not",
+          "node_id": "K2.C1.inference",
+          "premise_ids": [
+            "K2.C1.e1",
+            "K2.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Compared with how commissioners were chosen for decades, by the government alone, the law adds the Leader of the Opposition, so it is not less independent than before; the government argues the court's arrangement was only meant to last until Parliament made a law."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K2",
+      "title": "The 2023 law made the Election Commission less independent than before."
+    },
+    "K3": {
+      "arguments": [
+        {
+          "argument_id": "K3.P1",
+          "conclusion_id": "K3",
+          "inference_id": "K3.P1.inference",
+          "premise_ids": [
+            "K3.P1.e1",
+            "K3.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "65 lakh off the draft, 47 lakh fewer at the end"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K3",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Bihar's 2025 roll revision (SIR) removed tens of lakhs of names."
+        },
+        {
+          "node_id": "K3.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Bihar's 2025 roll revision (SIR) removed tens of lakhs of names."
+        }
+      ],
+      "conflicts": [],
+      "evidence": [
+        {
+          "node_id": "K3.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The Tribune (PTI), Names of 65 lakh voters deleted from Bihar SIR posted on district websites (2025-08-17) https://www.tribuneindia.com/news/india/names-of-65-lakh-voters-deleted-from-bihar-sir-posted-on-district-websites/amp; ETV Bharat, 'Can't have a roving inquiry, those aggrieved should file affidavits': SC on Bihar SIR (2025-10-07) https://www.etvbharat.com/en/!bharat/cant-have-a-roving-inquiry-those-aggrieved-should-file-affidavits-sc-on-bihar-sir-enn25100705353",
+            "status": "candidate"
+          },
+          "text": "About 65 lakh names were left out of the draft roll published on 1 August 2025; the Supreme Court had the ECI post the deleted names with reasons."
+        },
+        {
+          "node_id": "K3.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "SabrangIndia, Bihar SIR final voter list sees 47 lakh names removed, total electorate drops to 7.42 crore (2025-10-01) https://sabrangindia.in/bihar-sir-final-voter-list-sees-47-lakh-names-removed-total-electorate-drops-to-7-42-crore; ETV Bharat, 'Can't have a roving inquiry, those aggrieved should file affidavits': SC on Bihar SIR (2025-10-07) https://www.etvbharat.com/en/!bharat/cant-have-a-roving-inquiry-those-aggrieved-should-file-affidavits-sc-on-bihar-sir-enn25100705353",
+            "status": "candidate"
+          },
+          "text": "The final roll of 30 September 2025 had about 7.42 crore electors, against about 7.89 crore before the revision, a net drop of about 47 lakh, after 21.53 lakh were added and 3.66 lakh more removed."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K3",
+          "node_id": "K3.P1.inference",
+          "premise_ids": [
+            "K3.P1.e1",
+            "K3.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The ECI's own draft and final rolls show the scale of removals."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K3",
+      "title": "Bihar's 2025 roll revision (SIR) removed tens of lakhs of names."
+    },
+    "K4": {
+      "arguments": [
+        {
+          "argument_id": "K4.P1",
+          "conclusion_id": "K4",
+          "inference_id": "K4.P1.inference",
+          "premise_ids": [
+            "K4.P1.e1",
+            "K4.P1.e2",
+            "K4.P1.e3"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "The scale and the paperwork put eligible voters at risk"
+        },
+        {
+          "argument_id": "K4.C1",
+          "conclusion_id": "K4.not",
+          "inference_id": "K4.C1.inference",
+          "premise_ids": [
+            "K4.C1.e1",
+            "K4.C1.e2",
+            "K4.C1.e3"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The court upheld it, and the ECI says no one appealed"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K4",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The Bihar SIR left out many eligible voters."
+        },
+        {
+          "node_id": "K4.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: The Bihar SIR left out many eligible voters."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X4a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K4.C1",
+          "target_argument_id": "K4.P1",
+          "target_node_id": "K4"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X4b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K4.P1",
+          "target_argument_id": "K4.C1",
+          "target_node_id": "K4.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K4.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Supreme Court upholds validity of SIR, says ECI can examine citizenship (2026-05-27) https://www.thenewsminute.com/india/supreme-court-upholds-validity-of-sir-says-eci-can-examine-citizenship",
+            "status": "candidate"
+          },
+          "text": "Petitioners challenged the requirement that voters absent from the 2002 rolls prove a link to someone on those rolls."
+        },
+        {
+          "node_id": "K4.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The Tribune (PTI), Names of 65 lakh voters deleted from Bihar SIR posted on district websites (2025-08-17) https://www.tribuneindia.com/news/india/names-of-65-lakh-voters-deleted-from-bihar-sir-posted-on-district-websites/amp; LiveLaw, Supreme Court directs ECI to accept Aadhaar card as '12th document' in Bihar SIR as proof of identity (2025-09-08) https://www.livelaw.in/amp/top-stories/supreme-court-directs-eci-to-accept-aadhaar-card-as-12th-document-in-bihar-sir-as-proof-of-identity-303182",
+            "status": "candidate"
+          },
+          "text": "During the hearings the court had the ECI publish the deleted names with reasons and, in September 2025, accept Aadhaar as a 12th document for identity."
+        },
+        {
+          "node_id": "K4.P1.e3",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "ETV Bharat, 'Can't have a roving inquiry, those aggrieved should file affidavits': SC on Bihar SIR (2025-10-07) https://www.etvbharat.com/en/!bharat/cant-have-a-roving-inquiry-those-aggrieved-should-file-affidavits-sc-on-bihar-sir-enn25100705353",
+            "status": "candidate"
+          },
+          "text": "ADR's counsel told the court the deletions reflect a systemic problem and cited a person deleted in the draft who applied for inclusion but was not restored."
+        },
+        {
+          "node_id": "K4.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Supreme Court upholds validity of SIR, says ECI can examine citizenship (2026-05-27) https://www.thenewsminute.com/india/supreme-court-upholds-validity-of-sir-says-eci-can-examine-citizenship; Outlook, SIR to removal bid: Why Gyanesh Kumar's ECI tenure has faced repeated scrutiny (2026-09-23) https://www.outlookindia.com/national/sir-to-removal-bid-why-gyanesh-kumars-eci-tenure-has-faced-repeated-scrutiny",
+            "status": "candidate"
+          },
+          "text": "On 27 May 2026 the Supreme Court upheld the ECI's power to conduct the SIR, including examining citizenship for inclusion on the rolls, and said it had not acted in excess of its statutory powers, with a presumption in favour of electors already on the rolls."
+        },
+        {
+          "node_id": "K4.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "ETV Bharat, 'Can't have a roving inquiry, those aggrieved should file affidavits': SC on Bihar SIR (2025-10-07) https://www.etvbharat.com/en/!bharat/cant-have-a-roving-inquiry-those-aggrieved-should-file-affidavits-sc-on-bihar-sir-enn25100705353",
+            "status": "candidate"
+          },
+          "text": "In October 2025 the ECI's counsel told the court that no deleted voter had filed an appeal or complaint with it; the court said it could not hold a roving inquiry and asked for affidavits from those aggrieved, while ADR said it could produce 100."
+        },
+        {
+          "node_id": "K4.C1.e3",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "SabrangIndia, Bihar SIR final voter list sees 47 lakh names removed, total electorate drops to 7.42 crore (2025-10-01) https://sabrangindia.in/bihar-sir-final-voter-list-sees-47-lakh-names-removed-total-electorate-drops-to-7-42-crore",
+            "status": "candidate"
+          },
+          "text": "The Bihar Chief Electoral Officer's office attributed draft-stage deletions to deaths (about 22 lakh), migration or absence (about 36 lakh) and duplicates (about 7 lakh)."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K4",
+          "node_id": "K4.P1.inference",
+          "premise_ids": [
+            "K4.P1.e1",
+            "K4.P1.e2",
+            "K4.P1.e3"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "When tens of lakhs are removed and people missing from the 2002 roll must prove links to it, some eligible voters are likely to fall out; the court itself had to add safeguards along the way."
+        },
+        {
+          "conclusion_id": "K4.not",
+          "node_id": "K4.C1.inference",
+          "premise_ids": [
+            "K4.C1.e1",
+            "K4.C1.e2",
+            "K4.C1.e3"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The Supreme Court found the SIR lawful with safeguards, the state's election office gives deaths, migration and duplicates as the reasons, and the ECI said no deleted voter had appealed."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K4",
+      "title": "The Bihar SIR left out many eligible voters."
+    },
+    "K5": {
+      "arguments": [
+        {
+          "argument_id": "K5.P1",
+          "conclusion_id": "K5",
+          "inference_id": "K5.P1.inference",
+          "premise_ids": [
+            "K5.P1.e1",
+            "K5.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "A chargesheet and the ECI's own numbers"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K5",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "There was an organised attempt to fraudulently delete voters in Aland, Karnataka."
+        },
+        {
+          "node_id": "K5.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: There was an organised attempt to fraudulently delete voters in Aland, Karnataka."
+        }
+      ],
+      "conflicts": [],
+      "evidence": [
+        {
+          "node_id": "K5.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Aland vote fraud: Ex BJP MLA and son prime accused in chargesheet (2025-12-13) https://www.thenewsminute.com/karnataka/aland-vote-fraud-ex-bjp-mla-and-son-prime-accused-in-chargesheet; Business Standard, Karnataka vote theft case: SIT names ex-BJP MLA, son in chargesheet (2025-12-13) https://www.business-standard.com/india-news/karnataka-vote-theft-case-sit-names-ex-bjp-mla-son-in-chargesheet-125121300207_1.html",
+            "status": "candidate"
+          },
+          "text": "The Karnataka CID's SIT chargesheet names a former BJP MLA and his son as prime accused in an alleged conspiracy to file 5,994 fraudulent deletion applications between December 2022 and February 2023."
+        },
+        {
+          "node_id": "K5.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Aland vote fraud: Ex BJP MLA and son prime accused in chargesheet (2025-12-13) https://www.thenewsminute.com/karnataka/aland-vote-fraud-ex-bjp-mla-and-son-prime-accused-in-chargesheet",
+            "status": "candidate"
+          },
+          "text": "An ECI press release of 19 September 2025 said it received 6,018 online deletion applications for Aland, rejected 5,994 as incorrect and approved 24; the ECI filed a police complaint on 21 February 2023 after a complaint from MLA B R Patil."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K5",
+          "node_id": "K5.P1.inference",
+          "premise_ids": [
+            "K5.P1.e1",
+            "K5.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Police have charged named people for a paid scheme of fake deletion requests, and the ECI's figures show thousands of such requests."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K5",
+      "title": "There was an organised attempt to fraudulently delete voters in Aland, Karnataka."
+    },
+    "K6": {
+      "arguments": [
+        {
+          "argument_id": "K6.P1",
+          "conclusion_id": "K6",
+          "inference_id": "K6.P1.inference",
+          "premise_ids": [
+            "K6.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "Investigators say their requests went unanswered"
+        },
+        {
+          "argument_id": "K6.C1",
+          "conclusion_id": "K6.not",
+          "inference_id": "K6.C1.inference",
+          "premise_ids": [
+            "K6.C1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The ECI says it gave everything and started the case"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K6",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The ECI held back data that investigators needed in the Aland case."
+        },
+        {
+          "node_id": "K6.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: The ECI held back data that investigators needed in the Aland case."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X6a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K6.C1",
+          "target_argument_id": "K6.P1",
+          "target_node_id": "K6"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X6b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K6.P1",
+          "target_argument_id": "K6.C1",
+          "target_node_id": "K6.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K6.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The News Minute, Aland vote fraud: Ex BJP MLA and son prime accused in chargesheet (2025-12-13) https://www.thenewsminute.com/karnataka/aland-vote-fraud-ex-bjp-mla-and-son-prime-accused-in-chargesheet",
+            "status": "candidate"
+          },
+          "text": "Reporting on the chargesheet says the CID wrote 18 letters asking the ECI for technical data and that the ECI did not share it."
+        },
+        {
+          "node_id": "K6.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Deccan Herald, EC hits back at Rahul Gandhi, says nothing withheld in Aland fake voter deletion probe (2025-09-19) https://www.deccanherald.com/india/ec-hits-back-at-rahul-gandhi-says-nothing-withheld-in-aland-fake-voter-deletion-probe-3736331",
+            "status": "candidate"
+          },
+          "text": "The ECI said the case was registered by its own authority in 2023 and that it handed over all available information to the Karnataka CID."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K6",
+          "node_id": "K6.P1.inference",
+          "premise_ids": [
+            "K6.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "If the CID asked repeatedly for technical data and did not get it, the probe was held back."
+        },
+        {
+          "conclusion_id": "K6.not",
+          "node_id": "K6.C1.inference",
+          "premise_ids": [
+            "K6.C1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The ECI itself registered the first complaint and says it handed over all available information, which does not fit a body holding back data."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K6",
+      "title": "The ECI held back data that investigators needed in the Aland case."
+    },
+    "K7": {
+      "arguments": [
+        {
+          "argument_id": "K7.P1",
+          "conclusion_id": "K7",
+          "inference_id": "K7.P1.inference",
+          "premise_ids": [
+            "K7.P1.e1",
+            "K7.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed; the checker found the reasoning overreached, so it was reworded to its notes (not re-checked after rewording).",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "The opposition's analysis of the rolls"
+        },
+        {
+          "argument_id": "K7.C1",
+          "conclusion_id": "K7.not",
+          "inference_id": "K7.C1.inference",
+          "premise_ids": [
+            "K7.C1.e1",
+            "K7.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The ECI's numbers, and no sworn complaint"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K7",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Voter rolls in Mahadevapura and Maharashtra were padded with fake or duplicate entries."
+        },
+        {
+          "node_id": "K7.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Voter rolls in Mahadevapura and Maharashtra were padded with fake or duplicate entries."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X7a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K7.C1",
+          "target_argument_id": "K7.P1",
+          "target_node_id": "K7"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X7b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K7.P1",
+          "target_argument_id": "K7.C1",
+          "target_node_id": "K7.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K7.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Business Today, 'Over 1L votes stolen in Mahadevapura assembly': Rahul Gandhi's big claim against EC, poll body responds (2025-08-07) https://www.businesstoday.in/amp/india/story/over-1l-votes-stolen-in-mahadevapura-assembly-rahul-gandhis-big-claim-against-ec-poll-body-responds-488311-2025-08-07",
+            "status": "candidate"
+          },
+          "text": "Rahul Gandhi said a Congress research team found over one lakh fake votes in Mahadevapura out of about 6.5 lakh, in four categories: fake names, duplicates, invalid addresses and bulk additions."
+        },
+        {
+          "node_id": "K7.P1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Business Standard, Rahul Gandhi's Maharashtra voters-population claim; Election Commission says it will reply (2025-02-07) https://www.business-standard.com/india-news/rahul-gandhi-maharashtra-voters-population-claim-election-commission-reply-125020700833_1.html",
+            "status": "candidate"
+          },
+          "text": "He said Maharashtra had 9.7 crore voters against an adult population of 9.54 crore, with about 39 lakh added between the 2024 Lok Sabha and assembly polls."
+        },
+        {
+          "node_id": "K7.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "The Tribune, EC rejects Maha election rigging charge as absurd; don't evade, counters Rahul (2025-06-08) https://www.tribuneindia.com/news/india/ec-rejects-maha-election-rigging-charge-as-absurd-dont-evade-counters-rahul/amp/?utm=relatedarticles",
+            "status": "candidate"
+          },
+          "text": "EC sources said Maharashtra's electors rose 8.14% between the 2019 and 2024 assembly polls, less than Jharkhand (13.40%) or Telangana (16.16%) over their own cycles, and only 89 first appeals were filed after the rolls were finalised."
+        },
+        {
+          "node_id": "K7.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Business Today, 'Over 1L votes stolen in Mahadevapura assembly': Rahul Gandhi's big claim against EC, poll body responds (2025-08-07) https://www.businesstoday.in/amp/india/story/over-1l-votes-stolen-in-mahadevapura-assembly-rahul-gandhis-big-claim-against-ec-poll-body-responds-488311-2025-08-07; The Sentinel, Give affidavit or apologise, no third option: CEC to Rahul Gandhi (2025-08-18) https://www.sentinelassam.com/topheadlines/give-affidavit-or-apologise-no-third-option-cec-to-rahul-gandhi",
+            "status": "candidate"
+          },
+          "text": "Karnataka's Chief Electoral Officer asked Rahul Gandhi to sign a declaration under Rule 20(3)(b) naming the electors, and the CEC said he must give an affidavit within seven days or apologise, failing which the allegations would be treated as baseless."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K7",
+          "node_id": "K7.P1.inference",
+          "premise_ids": [
+            "K7.P1.e1",
+            "K7.P1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "If one seat has over a lakh suspect entries and, on Congress's figures, a state has more voters than its projected adult population, that suggests the rolls were padded."
+        },
+        {
+          "conclusion_id": "K7.not",
+          "node_id": "K7.C1.inference",
+          "premise_ids": [
+            "K7.C1.e1",
+            "K7.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "On EC figures, Maharashtra's growth was lower than in some other states, few appeals were filed, and the claims have not been submitted in the sworn form that would let officials check each name."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K7",
+      "title": "Voter rolls in Mahadevapura and Maharashtra were padded with fake or duplicate entries."
+    },
+    "K8": {
+      "arguments": [
+        {
+          "argument_id": "K8.P1",
+          "conclusion_id": "K8",
+          "inference_id": "K8.P1.inference",
+          "premise_ids": [
+            "K8.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "Checks are too thin to catch tampering"
+        },
+        {
+          "argument_id": "K8.C1",
+          "conclusion_id": "K8.not",
+          "inference_id": "K8.C1.inference",
+          "premise_ids": [
+            "K8.C1.e1",
+            "K8.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "The Supreme Court examined it and made no finding of tampering"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K8",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Voting machines (EVMs) have been tampered with to change results."
+        },
+        {
+          "node_id": "K8.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: Voting machines (EVMs) have been tampered with to change results."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X8a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K8.C1",
+          "target_argument_id": "K8.P1",
+          "target_node_id": "K8"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X8b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K8.P1",
+          "target_argument_id": "K8.C1",
+          "target_node_id": "K8.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K8.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Supreme Court Observer, Supreme Court rejects plea seeking 100% vote verification with VVPATs (2024-04-26) https://www.scobserver.in/reports/supreme-court-rejects-plea-seeking-100-vote-verification-with-vvpats/",
+            "status": "candidate"
+          },
+          "text": "ADR alleged tampering and data discrepancies and argued that VVPAT checks in only five randomly selected polling stations per constituency were insufficient."
+        },
+        {
+          "node_id": "K8.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Supreme Court Observer, Supreme Court rejects plea seeking 100% vote verification with VVPATs (2024-04-26) https://www.scobserver.in/reports/supreme-court-rejects-plea-seeking-100-vote-verification-with-vvpats/",
+            "status": "candidate"
+          },
+          "text": "In April 2024 the Supreme Court rejected all pleas for 100% VVPAT verification, including the suggestion to return to paper ballots, and made no finding of tampering."
+        },
+        {
+          "node_id": "K8.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Supreme Court Observer, Supreme Court rejects plea seeking 100% vote verification with VVPATs (2024-04-26) https://www.scobserver.in/reports/supreme-court-rejects-plea-seeking-100-vote-verification-with-vvpats/",
+            "status": "candidate"
+          },
+          "text": "It ordered symbol loading units sealed for 45 days and allowed the second- or third-placed candidate to request a burnt-memory check of 5% of a seat's EVMs."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K8",
+          "node_id": "K8.P1.inference",
+          "premise_ids": [
+            "K8.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "Petitioners alleged data discrepancies and argued that checking paper slips in only five polling stations per seat leaves tampering possible."
+        },
+        {
+          "conclusion_id": "K8.not",
+          "node_id": "K8.C1.inference",
+          "premise_ids": [
+            "K8.C1.e1",
+            "K8.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "After questioning the ECI at length on the machines, the court dismissed the pleas and added further checks; no tampering has been shown."
+        }
+      ],
+      "preferences": [
+        {
+          "dispreferred_argument_id": "K8.P1",
+          "preference_id": "PR8",
+          "preferred_argument_id": "K8.C1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "rationale": "A Supreme Court bench questioned the ECI at length on the machines and safeguards and made no finding of tampering; the petition argued that checks were too few, which is a case for more checking, not evidence that tampering happened."
+        }
+      ],
+      "root_claim_id": "K8",
+      "title": "Voting machines (EVMs) have been tampered with to change results."
+    },
+    "K9": {
+      "arguments": [
+        {
+          "argument_id": "K9.P1",
+          "conclusion_id": "K9",
+          "inference_id": "K9.P1.inference",
+          "premise_ids": [
+            "K9.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "pro",
+          "strength": 0.5,
+          "title": "The PM's speech drew a notice to his party, not to him"
+        },
+        {
+          "argument_id": "K9.C1",
+          "conclusion_id": "K9.not",
+          "inference_id": "K9.C1.inference",
+          "premise_ids": [
+            "K9.C1.e1",
+            "K9.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": "Cross-checked: evidence confirmed against its cited sources by an independent agent pass; where it suggested corrected wording, that wording was applied.",
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "cross_checked"
+          },
+          "stance": "con",
+          "strength": 0.5,
+          "title": "Both parties got the same treatment"
+        }
+      ],
+      "claims": [
+        {
+          "node_id": "K9",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The ECI enforces the Model Code of Conduct more softly against the ruling party."
+        },
+        {
+          "node_id": "K9.not",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "It is not the case that: The ECI enforces the Model Code of Conduct more softly against the ruling party."
+        }
+      ],
+      "conflicts": [
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X9a",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K9.C1",
+          "target_argument_id": "K9.P1",
+          "target_node_id": "K9"
+        },
+        {
+          "attack_type": "rebut",
+          "conflict_id": "X9b",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "source_argument_id": "K9.P1",
+          "target_argument_id": "K9.C1",
+          "target_node_id": "K9.not"
+        }
+      ],
+      "evidence": [
+        {
+          "node_id": "K9.P1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Onmanorama, EC notice to BJP, Congress over poll code violation plaints against Modi, Rahul Gandhi (2024-04-25) https://www.onmanorama.com/news/india/2024/04/25/election-commission-sends-notice-to-congress-bjp-over-hate-speech.amp.html",
+            "status": "candidate"
+          },
+          "text": "On complaints about the Prime Minister's April 2024 Banswara speech, the ECI sent its notice to BJP president J P Nadda; the letter did not name Modi."
+        },
+        {
+          "node_id": "K9.C1.e1",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Onmanorama, EC notice to BJP, Congress over poll code violation plaints against Modi, Rahul Gandhi (2024-04-25) https://www.onmanorama.com/news/india/2024/04/25/election-commission-sends-notice-to-congress-bjp-over-hate-speech.amp.html",
+            "status": "candidate"
+          },
+          "text": "Congress president Mallikarjun Kharge received a similarly worded notice about complaints against him and Rahul Gandhi; the report says the Commission was holding party presidents responsible as a first step to rein in star campaigners."
+        },
+        {
+          "node_id": "K9.C1.e2",
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": "Onmanorama, EC notice to BJP, Congress over poll code violation plaints against Modi, Rahul Gandhi (2024-04-25) https://www.onmanorama.com/news/india/2024/04/25/election-commission-sends-notice-to-congress-bjp-over-hate-speech.amp.html",
+            "status": "candidate"
+          },
+          "text": "Officials quoted in the report said it was the first time the Commission had taken cognisance of a complaint against any prime minister."
+        }
+      ],
+      "inferences": [
+        {
+          "conclusion_id": "K9",
+          "node_id": "K9.P1.inference",
+          "premise_ids": [
+            "K9.P1.e1"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "When the complaint was about the Prime Minister's own words, the ECI wrote to the BJP president instead, a softer step."
+        },
+        {
+          "conclusion_id": "K9.not",
+          "node_id": "K9.C1.inference",
+          "premise_ids": [
+            "K9.C1.e1",
+            "K9.C1.e2"
+          ],
+          "provenance": {
+            "confidence": 0.5,
+            "created_at": "2026-10-18T01:30:00Z",
+            "curator_note": null,
+            "generator_model": "claude (deliberate skill)",
+            "prompt_id": null,
+            "prompt_sha256": null,
+            "source_citation": null,
+            "status": "candidate"
+          },
+          "text": "The ECI handled complaints against Congress leaders the same way, through their party president, and it was the first time it took cognisance of a complaint against any prime minister."
+        }
+      ],
+      "preferences": [],
+      "root_claim_id": "K9",
+      "title": "The ECI enforces the Model Code of Conduct more softly against the ruling party."
+    }
+  },
+  "qc": {
+    "issues": [
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Deccan Herald) backs this",
+        "severity": "warning",
+        "target_id": "K1.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Deccan Herald) backs this",
+        "severity": "warning",
+        "target_id": "K2.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Deccan Herald) backs this",
+        "severity": "warning",
+        "target_id": "K2.P1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The Tribune) backs this",
+        "severity": "warning",
+        "target_id": "K2.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Deccan Herald) backs this",
+        "severity": "warning",
+        "target_id": "K2.C1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The News Minute) backs this",
+        "severity": "warning",
+        "target_id": "K4.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (ETV Bharat) backs this",
+        "severity": "warning",
+        "target_id": "K4.P1.e3"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (ETV Bharat) backs this",
+        "severity": "warning",
+        "target_id": "K4.C1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (SabrangIndia) backs this",
+        "severity": "warning",
+        "target_id": "K4.C1.e3"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The News Minute) backs this",
+        "severity": "warning",
+        "target_id": "K5.P1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The News Minute) backs this",
+        "severity": "warning",
+        "target_id": "K6.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Deccan Herald) backs this",
+        "severity": "warning",
+        "target_id": "K6.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Business Today) backs this",
+        "severity": "warning",
+        "target_id": "K7.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Business Standard) backs this",
+        "severity": "warning",
+        "target_id": "K7.P1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The Tribune) backs this",
+        "severity": "warning",
+        "target_id": "K7.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Onmanorama) backs this",
+        "severity": "warning",
+        "target_id": "K9.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Onmanorama) backs this",
+        "severity": "warning",
+        "target_id": "K9.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Onmanorama) backs this",
+        "severity": "warning",
+        "target_id": "K9.C1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (MediaNama) backs this",
+        "severity": "warning",
+        "target_id": "K10.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Scroll) backs this",
+        "severity": "warning",
+        "target_id": "K10.P1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The News Minute (Newslaundry)) backs this",
+        "severity": "warning",
+        "target_id": "K11.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Scroll) backs this",
+        "severity": "warning",
+        "target_id": "K12.P1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Scroll) backs this",
+        "severity": "warning",
+        "target_id": "K12.P1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (ETV Bharat) backs this",
+        "severity": "warning",
+        "target_id": "K12.C1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (The News Minute) backs this",
+        "severity": "warning",
+        "target_id": "K12.O1.e1"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Scroll) backs this",
+        "severity": "warning",
+        "target_id": "K12.O1.e2"
+      },
+      {
+        "kind": "single_publisher",
+        "message": "only one publisher (Scroll) backs this",
+        "severity": "warning",
+        "target_id": "K12.O2.e1"
+      }
+    ]
+  },
+  "schema_version": "dcore/1"
+}
