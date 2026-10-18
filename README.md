@@ -50,8 +50,8 @@ python -m dcore analyse claims/plastic-ban
 python -m dcore curate claims/plastic-ban K1.C1 --accept --note "checked the survey"
 
 # 4. Freeze: artifact.v1.json, report.md, graph.md (Mermaid diagrams),
-#    graph.html (an interactive page: pick a part, tap an argument to see its
-#    evidence and what it faces) and SHA256SUMS. `viz` redraws both graphs.
+#    graph.html (the whole argument graph on one zoomable page; tap a node to
+#    see why it holds or falls) and SHA256SUMS. `viz` redraws both graphs.
 python -m dcore freeze claims/plastic-ban
 
 # 5. Anyone can rebuild it and confirm the hash.

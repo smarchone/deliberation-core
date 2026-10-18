@@ -75,7 +75,7 @@ and `artifact.v1.json`, `report.md`, `graph.md`, `graph.html`, `SHA256SUMS` (bui
 7. **Freeze.** `python -m dcore analyse <folder>` to preview, then
    `python -m dcore freeze <folder>` and `python -m dcore verify <folder>`.
    Freeze also writes `graph.md` (a Mermaid diagram of each part's graph) and
-   `graph.html` (an interactive page of the same); `python -m dcore viz <folder>`
+   `graph.html` (the whole graph on one zoomable page); `python -m dcore viz <folder>`
    redraws both from the frozen artifact.
    If anything later changes, bump `version`, set `based_on` to the previous
    artifact's sha256, and freeze again.
