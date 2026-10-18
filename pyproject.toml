@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deliberation-core"
+version = "0.1.0"
+description = "The deterministic half of the deliberation core: check a deliberation, compute what stands with a verified argumentation engine, and freeze a hash-stamped artifact and report."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6"]
+
+[project.optional-dependencies]
+# PyArg is the independent oracle for the vendored engine's differential tests.
+dev = ["pytest>=8.0", "python-argumentation==2.0.2"]
+
+[tool.setuptools]
+packages = ["argkit", "dcore"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

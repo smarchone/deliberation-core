@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (with PyArg oracle)
+        run: pip install -e ".[dev]"
+      - name: Run suite (engine canon + 1000-AF differential vs PyArg + dcore)
+        run: pytest -q
+      - name: Verify every frozen deliberation rebuilds byte for byte
+        run: |
+          for d in deliberations/*/; do
+            python -m dcore verify "$d"
+            (cd "$d" && sha256sum -c SHA256SUMS)
+          done
